@@ -8,6 +8,7 @@
   width: 100%;
   margin-top: 15vh; }
 
+/*---------ESTILOS COURSES-------*/
 .txtCourses {
   display: flex;
   flex-direction: column;
@@ -84,6 +85,7 @@
   .containerCursos .Cursos:hover {
     transform: scale(1.1); }
 
+/*---------ESTILOS FOOTER-------*/
 footer {
   background-color: #000;
   color: #f1faee;
@@ -108,6 +110,7 @@ footer {
     width: 30px;
     margin-left: 10px; }
 
+/*---------ESTILOS INSTRUCTORS-------*/
 .boxMain {
   width: 50%;
   color: #f1faee;
@@ -138,7 +141,7 @@ footer {
     grid-template-columns: 20vw  35vw;
     grid-template-rows: 10vh  20vh 5vh;
     grid-column-gap: 4vh;
-    grid-template-areas: "txtNameInstructors imagenInstructor" "txtInstructors imagenInstructor" "port imagenInstructor"; }
+    grid-template-areas: "txtNameInstructors imagenInstructor" "txtInstructors imagenInstructor" "port imagenInstructor"; }
     .boxMain .instructorContainer .portfolio {
       grid: port;
       justify-content: flex-end;
@@ -158,6 +161,7 @@ footer {
       grid-area: imagenInstructor;
       width: 100%; }
 
+/*-------ESTILOS BASE---------*/
 * {
   margin: 0;
   padding: 0;
@@ -238,6 +242,7 @@ header {
         width: 50px;
         height: 25px; }
 
+/*---------ESTILOS CONTACT-------*/
 .titleForm {
   text-align: center;
   font-size: 2rem;
@@ -317,6 +322,7 @@ header {
     margin-top: 10vh;
     margin-left: 20%; }
 
+/*---------ESTILOS WORKS-------*/
 .titleWorks {
   text-align: center; }
 
@@ -339,6 +345,7 @@ header {
         width: 100%;
         height: 350px; }
 
+/*---------ESTILOS INDEX-------*/
 .bi-twitch {
   color: #f1faee; }
 
@@ -440,6 +447,7 @@ main {
     background-color: #000;
     color: #DAB400; }
 
+/*---------ESTILOS RESPONSIVE-------*/
 @media (max-width: 1024px) {
   .infoContact {
     margin-left: 5%; }
