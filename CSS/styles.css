@@ -141,7 +141,7 @@ footer {
     grid-template-columns: 20vw  35vw;
     grid-template-rows: 10vh  20vh 5vh;
     grid-column-gap: 4vh;
-    grid-template-areas: "txtNameInstructors imagenInstructor" "txtInstructors imagenInstructor" "port imagenInstructor"; }
+    grid-template-areas: "txtNameInstructors imagenInstructor" "txtInstructors imagenInstructor" "port imagenInstructor"; }
     .boxMain .instructorContainer .portfolio {
       grid: port;
       justify-content: flex-end;
