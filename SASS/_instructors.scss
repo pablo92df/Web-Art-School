@@ -1,0 +1,70 @@
+
+.bannerInstructors{
+    @extend %bannersGeneral;
+}
+.boxMain{
+    width: 50%;
+    color: #f1faee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+
+    .boxTitleInstructors{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 5vh;
+        .titleInstructors{
+            font-size: 3rem;
+            font-weight: 900;
+         }
+         .subTitlteInstructor{
+             width: 50%;
+         }
+    }
+
+    .instructorContainer{
+        display: grid;
+        color: #f1faee;
+        border-top: solid;
+        border-width: 1px;
+        border-color: #f1faee;
+        padding-top: 5vh;
+        margin-bottom: 5vh;
+        grid-template-columns: 20vw  35vw;
+        grid-template-rows: 10vh  20vh 5vh;
+        grid-column-gap: 4vh;
+        grid-template-areas: 
+        "txtNameInstructors imagenInstructor"
+        "txtInstructors imagenInstructor"
+        "port imagenInstructor";
+
+      .portfolio{
+        grid:port;
+        justify-content: flex-end;
+        color: #f1faee;
+        text-decoration: underline;
+        text-decoration-color: #DAB400;
+        padding-top: 20px;
+        padding-left: 10px;
+        }
+        .nameInstructors{
+            grid-area: txtNameInstructors;
+            font-size: 1.3rem;
+            padding-left: 10px;
+        }
+        .textInstructors{
+            grid-area: txtInstructors;
+            padding-left: 10px;
+        }
+        .imgInstructor{
+            grid-area: imagenInstructor;
+            width: 100%;
+        }
+    }
+}
+
+

@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #000;
+    color: #f1faee;
+}
+h1{
+    color: #FFFFFF;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    height: 10vh;
+    width: 100%;
+    .logo{
+        display: flex;
+        align-items: center;
+        margin-left: 5vw;
+        margin-right: 25;
+        width: fit-content;
+        .imgLogo{
+            height: 9vh;
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5vw;
+        margin-left: 30vw;
+        .ulNav {
+            display: flex;
+            height: 10vh;
+            .linkNavBar{
+                display: flex;
+                text-decoration: none;
+                color: #f1faee;
+                font-weight: bold;
+                font-size: 1.2rem;
+                width: 100%;
+                height: 10vh;
+                align-items: center;
+                padding: 20px;
+            }
+            .ulDesplegable li {
+                display: block;
+                width: 15vw;
+                padding: 0px;
+                margin-left: 0px;
+            }
+            .ulDesplegable {
+                position: absolute;
+                display: none; 
+            }
+            li:hover .ulDesplegable {
+                display:block;
+                position: absolute;
+                text-align: left; 
+                top: 10vh;
+                background-color: #000;
+                color: #f1faee;
+            }
+        }
+        li {
+            display: flex;
+            width: fit-content;
+            align-items: center;
+            .linkNavBar:hover{
+                background-color:#f1faee;
+                color: #000;
+            }
+        }
+        /*li a:hover{
+            background-color:#f1faee;
+            color: #000;
+        }*/
+        .divNavResponsive{
+            display: none;
+            .imgMenu{
+                width:50px;
+                 height:25px;
+            }
+        }
+    }   
+}

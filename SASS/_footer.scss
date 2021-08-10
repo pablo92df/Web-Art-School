@@ -1,0 +1,29 @@
+
+footer{
+    background-color: #000;
+    color: #f1faee;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: flex-end; 
+    margin: 0px; 
+    .footerText{
+        display: flex;
+        align-items: center;
+        margin-left: 5vw;
+        margin-right: 25;
+    }
+    .footerLogos{
+        display: flex;
+        width: 50vw;
+        justify-content: flex-end;
+        margin-right: 5vw;
+        margin-left: 30vw;
+    }
+    .logos{
+        height:30px;
+        width:30px;
+        margin-left: 10px;
+    }
+}
+

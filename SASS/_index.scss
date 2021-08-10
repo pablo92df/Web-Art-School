@@ -1,0 +1,117 @@
+
+.bi-twitch{
+    color: #f1faee;
+}
+.contenedor{
+    z-index: -1;
+    margin-top: 10vh;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+   /* background-image: url('../img/banner.jpg');
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;*/
+    .banner{
+        width: 100%;
+        height: auto;   
+    }
+    .tituloIndex{
+      color: #f1faee;
+        font-size: 3em;
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+    }
+    .btnBanner{
+        font-size: 2em;
+          position: absolute;
+          top: 40%;
+          left: 30%;
+          transform: translate(-50%,-50%);
+          background-color: #DAB400;
+          color: #f1faee;
+          border: none;
+      }
+}
+.tituloSubIndex{
+    color: #f1faee;
+    font-size: 3em;
+    text-decoration: underline;
+    text-decoration-color: #DAB400;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .aboutUs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        .titleAboutUS{
+            font-size: 4rem;
+        }
+        .descriptionAboutUs{
+            width: 50%;
+            font-size: 1.2rem;
+            margin-bottom: 5vh;
+        }
+    }
+}
+
+.sectionIndex{
+  width: 50%;
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+  .descriptionSectionIndex{
+        text-align: center;
+        margin-bottom: 5vh;
+        .TitleSectionIndex{
+            font-size: 3rem;
+            margin-bottom: 5vh;
+        }
+        .textSectionIndex{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.bottom{
+    background-image: url('../img/bannerBottom.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btnCourses{
+       /* border: solid;
+        border-width: 1px;
+        border-color: #FFFFFF;
+        background-color: #000;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        padding: 10px;
+        text-decoration: none;*/
+        @extend %buttonCoursesGeneral;
+        font-size: 1.5rem;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 900;
+    }
+    .btnCourses:hover{
+        background-color: #000;
+        color: #DAB400;
+    }
+  }

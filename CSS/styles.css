@@ -1,0 +1,560 @@
+.containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses, .bottom .btnCourses {
+  background-color: #DAB400;
+  border: none;
+  border-radius: 5px;
+  width: fit-content; }
+
+.bannerCursos, .bannerInstructors {
+  width: 100%;
+  margin-top: 15vh; }
+
+.txtCourses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh; }
+  .txtCourses #titleCourses {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 900; }
+
+.subTitleCourses {
+  display: flex;
+  width: 50%;
+  text-align: center; }
+
+.containerCursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-bottom: 15vh; }
+  .containerCursos .Cursos {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 20px;
+    padding: 25px;
+    background-color: #242424;
+    border-top: solid;
+    border-left: solid;
+    border-color: #5e5e5e;
+    border-width: 1px;
+    transition: all .2s ease-in-out; }
+    .containerCursos .Cursos .nameCourses {
+      text-decoration: underline;
+      text-decoration-color: #DAB400; }
+    .containerCursos .Cursos .boxDescriptionCourses {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left; }
+      .containerCursos .Cursos .boxDescriptionCourses .descriptionCourses {
+        margin-top: 10px; }
+      .containerCursos .Cursos .boxDescriptionCourses .bottomCourses {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        justify-content: flex-start;
+        width: 100%;
+        font-weight: bold;
+        /*.duration{
+                    text-decoration: underline;
+                    text-decoration-color: #DAB400;
+                }*/ }
+        .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses {
+          /* background-color: #DAB400;
+                    border: none;
+                    border-radius: 5px;
+                    margin-left: 20%;
+                    width: fit-content;*/
+          margin-left: 20%; }
+          .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses .moreInfo {
+            justify-content: center;
+            color: black;
+            font-weight: 800;
+            text-decoration: none;
+            margin: 5px; }
+        .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses:hover {
+          background-color: #000; }
+          .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses:hover .moreInfo {
+            color: #DAB400; }
+  .containerCursos .Cursos:hover {
+    transform: scale(1.1); }
+
+footer {
+  background-color: #000;
+  color: #f1faee;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0px; }
+  footer .footerText {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 25; }
+  footer .footerLogos {
+    display: flex;
+    width: 50vw;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    margin-left: 30vw; }
+  footer .logos {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px; }
+
+.boxMain {
+  width: 50%;
+  color: #f1faee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh; }
+  .boxMain .boxTitleInstructors {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5vh; }
+    .boxMain .boxTitleInstructors .titleInstructors {
+      font-size: 3rem;
+      font-weight: 900; }
+    .boxMain .boxTitleInstructors .subTitlteInstructor {
+      width: 50%; }
+  .boxMain .instructorContainer {
+    display: grid;
+    color: #f1faee;
+    border-top: solid;
+    border-width: 1px;
+    border-color: #f1faee;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+    grid-template-columns: 20vw  35vw;
+    grid-template-rows: 10vh  20vh 5vh;
+    grid-column-gap: 4vh;
+    grid-template-areas: "txtNameInstructors imagenInstructor" "txtInstructors imagenInstructor" "port imagenInstructor"; }
+    .boxMain .instructorContainer .portfolio {
+      grid: port;
+      justify-content: flex-end;
+      color: #f1faee;
+      text-decoration: underline;
+      text-decoration-color: #DAB400;
+      padding-top: 20px;
+      padding-left: 10px; }
+    .boxMain .instructorContainer .nameInstructors {
+      grid-area: txtNameInstructors;
+      font-size: 1.3rem;
+      padding-left: 10px; }
+    .boxMain .instructorContainer .textInstructors {
+      grid-area: txtInstructors;
+      padding-left: 10px; }
+    .boxMain .instructorContainer .imgInstructor {
+      grid-area: imagenInstructor;
+      width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #000;
+  color: #f1faee; }
+
+h1 {
+  color: #FFFFFF; }
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  height: 10vh;
+  width: 100%; }
+  header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 25;
+    width: fit-content; }
+    header .logo .imgLogo {
+      height: 9vh; }
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    margin-left: 30vw;
+    /*li a:hover{
+            background-color:#f1faee;
+            color: #000;
+        }*/ }
+    header nav .ulNav {
+      display: flex;
+      height: 10vh; }
+      header nav .ulNav .linkNavBar {
+        display: flex;
+        text-decoration: none;
+        color: #f1faee;
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+        padding: 20px; }
+      header nav .ulNav .ulDesplegable li {
+        display: block;
+        width: 15vw;
+        padding: 0px;
+        margin-left: 0px; }
+      header nav .ulNav .ulDesplegable {
+        position: absolute;
+        display: none; }
+      header nav .ulNav li:hover .ulDesplegable {
+        display: block;
+        position: absolute;
+        text-align: left;
+        top: 10vh;
+        background-color: #000;
+        color: #f1faee; }
+    header nav li {
+      display: flex;
+      width: fit-content;
+      align-items: center; }
+      header nav li .linkNavBar:hover {
+        background-color: #f1faee;
+        color: #000; }
+    header nav .divNavResponsive {
+      display: none; }
+      header nav .divNavResponsive .imgMenu {
+        width: 50px;
+        height: 25px; }
+
+.titleForm {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5vh;
+  border-bottom: solid;
+  border-color: black;
+  border-width: 1px; }
+
+.boxTxtForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .boxTxtForm .txtForm {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 70%;
+    margin-top: 2vh; }
+
+.containerForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  width: 100%;
+  padding-top: 5vh;
+  background-color: #FFFFFF;
+  color: black; }
+  .containerForm .infoContact {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%; }
+    .containerForm .infoContact .subContact {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px; }
+      .containerForm .infoContact .subContact .logosContact {
+        width: 50px;
+        height: 50px; }
+      .containerForm .infoContact .subContact .textLogoContact {
+        margin-left: 10px; }
+  .containerForm .classForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .containerForm .classForm .divInputs {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 5px; }
+      .containerForm .classForm .divInputs .inputs {
+        font-size: 1.5em;
+        padding: 10px;
+        width: 48%;
+        border: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        margin-right: 2%; }
+    .containerForm .classForm .textAreaContact {
+      padding: 10px;
+      width: 98%;
+      border: solid;
+      border-width: 1px;
+      border-radius: 5px;
+      margin-top: 10px; }
+    .containerForm .classForm .inputBtn {
+      margin: 20px;
+      font-size: 1.5em;
+      border: solid;
+      border-width: 1px;
+      border-color: #000;
+      color: #000;
+      width: 10vw;
+      background-color: #f1faee; }
+  .containerForm .maps {
+    width: 80%;
+    margin-top: 10vh;
+    margin-left: 20%; }
+
+.titleWorks {
+  text-align: center; }
+
+.containerBannerWorks {
+  z-index: -1;
+  margin-top: 20vh;
+  width: 90%;
+  position: relative;
+  display: inline-block; }
+
+.containerVideos {
+  margin-top: 15vh;
+  width: 90%;
+  z-index: -2; }
+  .containerVideos .divVideo {
+    margin-top: 10px; }
+    .containerVideos .divVideo .card {
+      /* background-color:rgb(36, 36, 36);*/ }
+      .containerVideos .divVideo .card iframe {
+        width: 100%;
+        height: 350px; }
+
+.bi-twitch {
+  color: #f1faee; }
+
+.contenedor {
+  z-index: -1;
+  margin-top: 10vh;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /* background-image: url('../img/banner.jpg');
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;*/ }
+  .contenedor .banner {
+    width: 100%;
+    height: auto; }
+  .contenedor .tituloIndex {
+    color: #f1faee;
+    font-size: 3em;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    transform: translate(-50%, -50%); }
+  .contenedor .btnBanner {
+    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #DAB400;
+    color: #f1faee;
+    border: none; }
+
+.tituloSubIndex {
+  color: #f1faee;
+  font-size: 3em;
+  text-decoration: underline;
+  text-decoration-color: #DAB400;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%); }
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  main .aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh; }
+    main .aboutUs .titleAboutUS {
+      font-size: 4rem; }
+    main .aboutUs .descriptionAboutUs {
+      width: 50%;
+      font-size: 1.2rem;
+      margin-bottom: 5vh; }
+
+.sectionIndex {
+  width: 50%;
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 15vh; }
+  .sectionIndex .descriptionSectionIndex {
+    text-align: center;
+    margin-bottom: 5vh; }
+    .sectionIndex .descriptionSectionIndex .TitleSectionIndex {
+      font-size: 3rem;
+      margin-bottom: 5vh; }
+    .sectionIndex .descriptionSectionIndex .textSectionIndex {
+      font-size: 1.5rem; }
+
+.bottom {
+  background-image: url("../img/bannerBottom.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .bottom .btnCourses {
+    /* border: solid;
+        border-width: 1px;
+        border-color: #FFFFFF;
+        background-color: #000;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        padding: 10px;
+        text-decoration: none;*/
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900; }
+  .bottom .btnCourses:hover {
+    background-color: #000;
+    color: #DAB400; }
+
+@media (max-width: 1024px) {
+  .infoContact {
+    margin-left: 5%; }
+  .boxMain {
+    width: 80%; }
+    .boxMain .instructorContainer {
+      grid-template-columns: 25vw 40vw;
+      grid-template-rows: 5vh 20vh 5vh; }
+  header nav {
+    margin-left: 5vw; } }
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  /*---------INDEX-----------------*/
+  header nav {
+    margin-left: 50%; }
+    header nav .ulNav {
+      display: none; }
+    header nav .divNavResponsive {
+      display: flex;
+      justify-content: flex-end; }
+  .btnMenu {
+    background-color: #000;
+    border: none; }
+  .imgMenu {
+    background-color: #000;
+    width: 40px;
+    height: 25px; }
+    .imgMenu .aboutUs {
+      margin-top: 2vh; }
+    .imgMenu .descriptionAboutUs {
+      width: 90%; }
+    .imgMenu .imgAboutUs {
+      width: 100%; }
+  .sectionIndex {
+    width: 90%; }
+    .sectionIndex .descriptionSectionIndex {
+      text-align: center;
+      margin-bottom: 5vh; }
+      .sectionIndex .descriptionSectionIndex .TitleSectionIndex {
+        font-size: 3rem;
+        margin-bottom: 2vh; }
+      .sectionIndex .descriptionSectionIndex .textSectionIndex {
+        font-size: 1.5rem;
+        text-align: left; }
+  .txtCourses {
+    margin-top: 5vh;
+    width: 90%;
+    text-align: center; }
+    .txtCourses #titleCourses {
+      margin-bottom: 20px;
+      font-size: 3rem; }
+  .subTitleCourses {
+    width: 75%; }
+  /*-----------INSTRUCTORS-------------*/
+  .boxMain {
+    width: 90%;
+    color: #f1faee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh; }
+    .boxMain .subTitlteInstructor {
+      width: 90%; }
+    .boxMain .instructorContainer {
+      display: flex;
+      flex-direction: column;
+      color: #f1faee;
+      border-top: solid;
+      border-width: 1px;
+      border-color: #f1faee;
+      padding-top: 5vh;
+      width: 100%; }
+    .boxMain .nameInstructors {
+      margin: 20px 0 20px 0;
+      font-size: 1.3rem;
+      padding-right: 10px; }
+    .boxMain .textInstructors {
+      margin-bottom: 20px;
+      padding-right: 10px; }
+    .boxMain .portfolio {
+      margin-bottom: 20px;
+      text-decoration: none; }
+  /*-----------CONTACT US-------------*/ }
+
+@media (max-width: 768px) {
+  .classForm {
+    width: 100%;
+    margin-left: 5%; }
+  header nav {
+    margin-left: 50%; } }
+
+@media (max-width: 425px) {
+  .classForm {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; }
+    .classForm .divInputs {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .classForm .divInputs .inputs {
+        padding: 10px;
+        width: 100%;
+        margin: 20px; }
+    .classForm .textAreaContact {
+      padding: 10px;
+      width: 100%;
+      margin-left: 10%; }
+    .classForm .inputBtn {
+      width: fit-content; }
+  .infoContact {
+    width: 90%;
+    margin-left: 10%; } }
+
+@media only screen and (max-width: 426px) and (min-width: 320px) {
+  header nav {
+    margin-left: 20vw; } }
