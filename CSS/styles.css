@@ -8,16 +8,13 @@
   width: 100%;
   margin-top: 15vh; }
 
-<<<<<<< HEAD
 /*----------ESTILOS CURSOS-----------*/
-=======
-/*---------ESTILOS COURSES-------*/
->>>>>>> segundaRama
 .txtCourses {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vh; }
+  margin-top: 5vh;
+  text-align: center; }
   .txtCourses #titleCourses {
     display: flex;
     margin-bottom: 20px;
@@ -89,11 +86,7 @@
   .containerCursos .Cursos:hover {
     transform: scale(1.1); }
 
-<<<<<<< HEAD
 /*----------ESTILO FOOTER---------*/
-=======
-/*---------ESTILOS FOOTER-------*/
->>>>>>> segundaRama
 footer {
   background-color: #000;
   color: #f1faee;
@@ -118,11 +111,7 @@ footer {
     width: 30px;
     margin-left: 10px; }
 
-<<<<<<< HEAD
 /*--------ESTILOS INSTRUCTORS----------*/
-=======
-/*---------ESTILOS INSTRUCTORS-------*/
->>>>>>> segundaRama
 .boxMain {
   width: 50%;
   color: #f1faee;
@@ -173,11 +162,7 @@ footer {
       grid-area: imagenInstructor;
       width: 100%; }
 
-<<<<<<< HEAD
-/*-----ESTILOS GENERALES-------*/
-=======
 /*-------ESTILOS BASE---------*/
->>>>>>> segundaRama
 * {
   margin: 0;
   padding: 0;
@@ -258,11 +243,7 @@ header {
         width: 50px;
         height: 25px; }
 
-<<<<<<< HEAD
 /*--------------ESTILOS------------*/
-=======
-/*---------ESTILOS CONTACT-------*/
->>>>>>> segundaRama
 .titleForm {
   text-align: center;
   font-size: 2rem;
@@ -342,11 +323,7 @@ header {
     margin-top: 10vh;
     margin-left: 20%; }
 
-<<<<<<< HEAD
 /*-------------ESTILOS WORKS-----------*/
-=======
-/*---------ESTILOS WORKS-------*/
->>>>>>> segundaRama
 .titleWorks {
   text-align: center; }
 
@@ -369,11 +346,7 @@ header {
         width: 100%;
         height: 350px; }
 
-<<<<<<< HEAD
 /*----------ESTILO INDEX----------*/
-=======
-/*---------ESTILOS INDEX-------*/
->>>>>>> segundaRama
 .bi-twitch {
   color: #f1faee; }
 
@@ -435,8 +408,11 @@ main {
       margin-bottom: 5vh; }
 
 .sectionIndex {
-  width: 50%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   margin-top: 10vh;
   margin-bottom: 15vh; }
   .sectionIndex .descriptionSectionIndex {
@@ -446,7 +422,15 @@ main {
       font-size: 3rem;
       margin-bottom: 5vh; }
     .sectionIndex .descriptionSectionIndex .textSectionIndex {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      width: 50%;
+      margin-left: 25%; }
+  .sectionIndex .imagesSectionIndex {
+    display: flex; }
+    .sectionIndex .imagesSectionIndex .imgInstructors {
+      width: 50%; }
+    .sectionIndex .imagesSectionIndex .imgStudents {
+      width: 50%; }
 
 .bottom {
   background-image: url("../img/bannerBottom.jpg");
@@ -458,14 +442,6 @@ main {
   align-items: center;
   justify-content: center; }
   .bottom .btnCourses {
-    /* border: solid;
-        border-width: 1px;
-        border-color: #FFFFFF;
-        background-color: #000;
-        color: #FFFFFF;
-        font-size: 1.5rem;
-        padding: 10px;
-        text-decoration: none;*/
     font-size: 1.5rem;
     padding: 10px;
     text-decoration: none;
@@ -475,11 +451,7 @@ main {
     background-color: #000;
     color: #DAB400; }
 
-<<<<<<< HEAD
 /*------------ESTILOS RESPONSIVE----------*/
-=======
-/*---------ESTILOS RESPONSIVE-------*/
->>>>>>> segundaRama
 @media (max-width: 1024px) {
   .infoContact {
     margin-left: 5%; }

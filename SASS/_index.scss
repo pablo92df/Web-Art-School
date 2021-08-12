@@ -68,8 +68,11 @@ main{
 }
 
 .sectionIndex{
-  width: 50%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   margin-top: 10vh;
   margin-bottom: 15vh;
   .descriptionSectionIndex{
@@ -81,6 +84,17 @@ main{
         }
         .textSectionIndex{
             font-size: 1.5rem;
+            width: 50%;
+            margin-left:25%;
+            }
+    }
+    .imagesSectionIndex{
+        display: flex;
+        .imgInstructors{
+            width: 50%;
+        }
+        .imgStudents{
+            width: 50%;
         }
     }
 }
@@ -95,14 +109,6 @@ main{
     align-items: center;
     justify-content: center;
     .btnCourses{
-       /* border: solid;
-        border-width: 1px;
-        border-color: #FFFFFF;
-        background-color: #000;
-        color: #FFFFFF;
-        font-size: 1.5rem;
-        padding: 10px;
-        text-decoration: none;*/
         @extend %buttonCoursesGeneral;
         font-size: 1.5rem;
         padding: 10px;
