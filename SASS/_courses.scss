@@ -28,7 +28,6 @@
     justify-content: center;
     margin-top: 15vh;
     margin-bottom: 15vh;
-    
     .Cursos{
         display: flex;
         flex-direction: column;
@@ -36,7 +35,6 @@
         margin: 20px;
         padding: 25px;
         background-color:rgb(36, 36, 36);
-      
         border-top: solid;
         border-left: solid;
         border-color: rgb(94, 94, 94);
@@ -45,6 +43,7 @@
          .nameCourses{
             text-decoration: underline;
             text-decoration-color: #DAB400;
+            font-size: 1.4rem;
          }
         .boxDescriptionCourses{
             margin-top: 10px;
@@ -52,7 +51,6 @@
             flex-direction: column;
             align-items: center;
             text-align: left;
-
             .descriptionCourses{
                 margin-top: 10px;
             }
@@ -63,26 +61,16 @@
                 justify-content: flex-start;
                 width: 100%;
                 font-weight: bold;
-                /*.duration{
-                    text-decoration: underline;
-                    text-decoration-color: #DAB400;
-                }*/
                 .buttonCourses{
-                   /* background-color: #DAB400;
-                    border: none;
-                    border-radius: 5px;
-                    margin-left: 20%;
-                    width: fit-content;*/
                     @extend %buttonCoursesGeneral;
                     margin-left: 20%;
+                    padding: 10px;
                         .moreInfo{
                             justify-content: center;
                             color: black;
                             font-weight: 800;
-                            text-decoration: none;
                             margin: 5px
                         }
-                        
                 }
                 .buttonCourses:hover{
                     background-color:#000;

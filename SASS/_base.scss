@@ -32,15 +32,16 @@ header{
             height: 9vh;
         }
     }
-    nav{
+    .navBarra{
         display: flex;
         justify-content: flex-end;
         margin-right: 5vw;
         margin-left: 30vw;
-        .ulNav {
+        .ulNavBarra {
             display: flex;
             height: 10vh;
-            .linkNavBar{
+            padding: 0px !important;
+            .aLinkNavBar{
                 display: flex;
                 text-decoration: none;
                 color: #f1faee;
@@ -60,8 +61,9 @@ header{
             .ulDesplegable {
                 position: absolute;
                 display: none; 
+                padding: 0px !important;
             }
-            li:hover .ulDesplegable {
+            .liNav:hover .ulDesplegable {
                 display:block;
                 position: absolute;
                 text-align: left; 
@@ -70,19 +72,15 @@ header{
                 color: #f1faee;
             }
         }
-        li {
+        .liNav {
             display: flex;
             width: fit-content;
             align-items: center;
-            .linkNavBar:hover{
+            .aLinkNavBar:hover{
                 background-color:#f1faee;
                 color: #000;
             }
         }
-        /*li a:hover{
-            background-color:#f1faee;
-            color: #000;
-        }*/
         .divNavResponsive{
             display: none;
             .imgMenu{

@@ -10,39 +10,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 
     <title>Home</title>
 </head>
 <body>
    <header>
     <a href="index.html" class="logo"><img src="img/logo.jpg" alt="name school logo" class="imgLogo" ></a>
-    <nav>
-     <ul class="ulNav">
-          <li><a class="linkNavBar" href="index.html">HOME</a></li>
-          <li><a class="linkNavBar" href="courses.html">COURSES</a>
-              <ul class="ulDesplegable">
-                  <li><a class="linkNavBar" href="courses.html#DigitalPainting">DIGITAL PAINTING</a></li>
-                  <li><a class="linkNavBar" href="courses.html#CharacterDesing">CHARACTER DESING</a> </li>
-                  <li><a class="linkNavBar" href="courses.html#PaintingEnvironments">PAINTING ENVIRONMENTS</a></li>
-                  <li><a class="linkNavBar" href="courses.html#Cartoons">CARTOONS</a></li>
-                  <li><a class="linkNavBar" href="courses.html#PaintingEnvironments">EDITORIAL ILLUSTRATION</a></li>
-                  <li><a class="linkNavBar" href="courses.html#Cartoons">LIGHTING</a></li>
-              </ul>
-          </li>
-          <li><a class="linkNavBar" href="instructors.html">INSTRUCTORS</a></li>
-          <li><a class="linkNavBar" href="works.html">WORKS</a> </li>
-          <li><a class="linkNavBar" href="contact.html">CONTACT</a></li>
-      </ul>
-      <div class="divNavResponsive">
-          <button class="btnMenu"><img class="imgMenu"src="img/menu.png" alt="" width="50px" height="25px"></button>
-      </div>
-      </nav>
+    <nav class="navBarra">
+        <ul class="ulNavBarra">
+             <li class="liNav"><a class="aLinkNavBar" href="index.html">HOME</a></li>
+             <li class="liNav"><a class="aLinkNavBar" href="courses.html">COURSES</a>
+                 <ul class="ulDesplegable">
+                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#DigitalPainting">DIGITAL PAINTING</a></li>
+                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#CharacterDesing">CHARACTER DESING</a> </li>
+                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">PAINTING ENVIRONMENTS</a></li>
+                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">CARTOONS</a></li>
+                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">EDITORIAL ILLUSTRATION</a></li>
+                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">LIGHTING</a></li>
+                 </ul>
+             </li>
+             <li class="liNav"><a class="aLinkNavBar" href="instructors.html">INSTRUCTORS</a></li>
+             <li class="liNav"><a class="aLinkNavBar" href="works.html">WORKS</a> </li>
+             <li class="liNav"><a class="aLinkNavBar" href="contact.html">CONTACT</a></li>
+         </ul>
+         <div class="divNavResponsive">
+             <button class="btnMenu"><img class="imgMenu"src="img/menu.png" alt="" width="50px" height="25px"></button>
+         </div>
+    </nav>
    </header>
    <div class="contenedor">
     <img src="img/banner.jpg" alt="" class="banner">
      <h1 class="tituloIndex">New ways to</h1><h1 class="tituloSubIndex"> Learn</h1>
-     <!--a class="btnBanner" href="courses.html">Start</a-->
    </div> 
    <main>  
          <div class="aboutUs">
@@ -52,24 +51,39 @@
                     pariatur quis repudiandae vitae animi voluptatum 
                     consectetur illum sapiente veniam nulla? Aliquid magni hic qui quia optio excepturi! Vel!
             </p>
-            <img src="img/nena index.png" alt=""  class="imgAboutUs" width="50%">
+            <img src="img/nena index.png" alt=""  class="imgAboutUs" >
         </div>
         <div class="sectionIndex">
             <div class="descriptionSectionIndex">
-                <h2 class="TitleSectionIndex">Great Comunity of Artist</h2>
+                <h3 class="TitleSectionIndex">Great Comunity of Artist</h3>
                 <p class="textSectionIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum esse suscipit repellendus aspernatur aliquam commodi blanditiis autem vero totam quaerat fugit.</p>
             </div>
             <div class="imagesSectionIndex">
-                <img src="img/instructors.jpg" alt="instructors" class="imgInstructors" >
-                <img src="img/students.jpg" alt="students" class="imgStudents">
+                <div class="divImgInstructorIndex">
+                    <a href="instructors.html" class="linkPage">Know our instructors</a>
+                </div>
+                <div class="divImgStudents">
+                    <a href="works.html" class="linkPage">See the experience of our students</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="companiesDiv">
+            <div class="sectionCompanies">
+                <h3 class="titleCompanies">They Trust in Us</h3>
+                <p class="textCompanies">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum esse suscipit repellendus aspernatur aliquam commodi blanditiis autem vero totam quaerat fugit.</p>
+            </div>
+            <div class="companiesImg">
+                <img src="img/blizzard-logo-01-2.webp" alt="blizzard-logo" class="logoCompany">
+                <img src="img/skybound-logo-white-01.webp" alt="skybound-logo" class="logoCompany">
+                <img src="img/weta.webp" alt="weta-logo" class="logoCompany">
+                <img src="img/hasbro-logo-white-01-1.webp" alt="hasbro-logo" class="logoCompany">
+                <img src="img/ubisoft.webp" alt="ubisoft-logo" class="logoCompany">
+                <img src="img/mad-finger-logo-white-01.webp" alt="mad-finger-logo" class="logoCompany">
             </div>
         </div>
         <div class="bottom">
             <a href="courses.html" class="btnCourses">All Courses</a>
-            <!--div class="btn-group-vertical"> < Agrupando botones verticalmente >
-                <button type="button" class="btn btn-dark"><a href="courses.html" >All Courses</a></button>
-                <button type="button" class="btn btn-light"><a href="works.html" >All Works</a></button>
-            </div-->
         </div>
     
     </main>

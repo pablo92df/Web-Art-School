@@ -25,7 +25,6 @@
              width: 50%;
          }
     }
-
     .instructorContainer{
         display: grid;
         color: #f1faee;
@@ -33,6 +32,7 @@
         border-width: 1px;
         border-color: #f1faee;
         padding-top: 5vh;
+        padding-bottom: 5vh;
         margin-bottom: 5vh;
         grid-template-columns: 20vw  35vw;
         grid-template-rows: 10vh  20vh 5vh;
@@ -53,16 +53,18 @@
         }
         .nameInstructors{
             grid-area: txtNameInstructors;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             padding-left: 10px;
         }
         .textInstructors{
             grid-area: txtInstructors;
             padding-left: 10px;
+            font-size: 1.1rem;
         }
         .imgInstructor{
             grid-area: imagenInstructor;
             width: 100%;
+            padding-top: 2vh;
         }
     }
 }

@@ -8,11 +8,6 @@
     position: relative;
     display: inline-block;
     text-align: center;
-   /* background-image: url('../img/banner.jpg');
-    background-position: center;
-    width: 100%;
-    height: 90vh;
-    background-repeat: no-repeat;*/
     .banner{
         width: 100%;
         height: auto;   
@@ -58,15 +53,19 @@ main{
         margin-top: 5vh;
         .titleAboutUS{
             font-size: 4rem;
+            margin-bottom: 5vh;
         }
         .descriptionAboutUs{
             width: 50%;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-bottom: 5vh;
+            text-align: center;
+        }
+        .imgAboutUs{
+            width: 50%;
         }
     }
 }
-
 .sectionIndex{
   width: 100%;
   display: flex;
@@ -90,11 +89,64 @@ main{
     }
     .imagesSectionIndex{
         display: flex;
-        .imgInstructors{
+        flex-direction: row;
+        height:40vh;
+        .divImgInstructorIndex{
+            background-image: url('../img/instructors.jpg');
+            background-repeat: no-repeat;
+            background-position: center; 
+            background-size: 100%;
             width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .linkPage{
+               @extend %linkPageIndex;
+            }
         }
-        .imgStudents{
+        .divImgStudents{
+            background-image: url('../img/students.jpg');
+            background-repeat: no-repeat;
+            background-position: center; 
+            background-size: 100%;
             width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .linkPage{
+                @extend %linkPageIndex;
+             }
+        }
+    }
+}
+.companiesDiv{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vh;
+    .sectionCompanies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5vh;
+        .titleCompanies{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        .textCompanies{
+            text-align:center;
+            width: 50%;
+            font-size: 1.2rem;
+        }
+    }
+    .companiesImg{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5vh 5vw;
+        .logoCompany{
+            margin: 2vh 2vw;
         }
     }
 }
@@ -112,7 +164,6 @@ main{
         @extend %buttonCoursesGeneral;
         font-size: 1.5rem;
         padding: 10px;
-        text-decoration: none;
         color: #000;
         font-weight: 900;
     }

@@ -1,4 +1,83 @@
-.containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses, .bottom .btnCourses {
+/*-------ESTILOS BASE---------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #000;
+  color: #f1faee; }
+
+h1 {
+  color: #FFFFFF; }
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  height: 10vh;
+  width: 100%; }
+  header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 25;
+    width: fit-content; }
+    header .logo .imgLogo {
+      height: 9vh; }
+  header .navBarra {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    margin-left: 30vw; }
+    header .navBarra .ulNavBarra {
+      display: flex;
+      height: 10vh;
+      padding: 0px !important; }
+      header .navBarra .ulNavBarra .aLinkNavBar {
+        display: flex;
+        text-decoration: none;
+        color: #f1faee;
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+        padding: 20px; }
+      header .navBarra .ulNavBarra .ulDesplegable li {
+        display: block;
+        width: 15vw;
+        padding: 0px;
+        margin-left: 0px; }
+      header .navBarra .ulNavBarra .ulDesplegable {
+        position: absolute;
+        display: none;
+        padding: 0px !important; }
+      header .navBarra .ulNavBarra .liNav:hover .ulDesplegable {
+        display: block;
+        position: absolute;
+        text-align: left;
+        top: 10vh;
+        background-color: #000;
+        color: #f1faee; }
+    header .navBarra .liNav {
+      display: flex;
+      width: fit-content;
+      align-items: center; }
+      header .navBarra .liNav .aLinkNavBar:hover {
+        background-color: #f1faee;
+        color: #000; }
+    header .navBarra .divNavResponsive {
+      display: none; }
+      header .navBarra .divNavResponsive .imgMenu {
+        width: 50px;
+        height: 25px; }
+
+.containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses, .containerForm .classForm .inputBtn, .bottom .btnCourses {
   background-color: #DAB400;
   border: none;
   border-radius: 5px;
@@ -7,6 +86,13 @@
 .bannerCursos, .bannerInstructors {
   width: 100%;
   margin-top: 15vh; }
+
+.sectionIndex .imagesSectionIndex .divImgInstructorIndex .linkPage, .sectionIndex .imagesSectionIndex .divImgStudents .linkPage {
+  text-decoration: underline;
+  text-decoration-color: #DAB400;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #FFF; }
 
 /*----------ESTILOS CURSOS-----------*/
 .txtCourses {
@@ -46,7 +132,8 @@
     transition: all .2s ease-in-out; }
     .containerCursos .Cursos .nameCourses {
       text-decoration: underline;
-      text-decoration-color: #DAB400; }
+      text-decoration-color: #DAB400;
+      font-size: 1.4rem; }
     .containerCursos .Cursos .boxDescriptionCourses {
       margin-top: 10px;
       display: flex;
@@ -61,23 +148,14 @@
         margin-top: 20px;
         justify-content: flex-start;
         width: 100%;
-        font-weight: bold;
-        /*.duration{
-                    text-decoration: underline;
-                    text-decoration-color: #DAB400;
-                }*/ }
+        font-weight: bold; }
         .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses {
-          /* background-color: #DAB400;
-                    border: none;
-                    border-radius: 5px;
-                    margin-left: 20%;
-                    width: fit-content;*/
-          margin-left: 20%; }
+          margin-left: 20%;
+          padding: 10px; }
           .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses .moreInfo {
             justify-content: center;
             color: black;
             font-weight: 800;
-            text-decoration: none;
             margin: 5px; }
         .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses:hover {
           background-color: #000; }
@@ -138,6 +216,7 @@ footer {
     border-width: 1px;
     border-color: #f1faee;
     padding-top: 5vh;
+    padding-bottom: 5vh;
     margin-bottom: 5vh;
     grid-template-columns: 20vw  35vw;
     grid-template-rows: 10vh  20vh 5vh;
@@ -153,95 +232,16 @@ footer {
       padding-left: 10px; }
     .boxMain .instructorContainer .nameInstructors {
       grid-area: txtNameInstructors;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       padding-left: 10px; }
     .boxMain .instructorContainer .textInstructors {
       grid-area: txtInstructors;
-      padding-left: 10px; }
+      padding-left: 10px;
+      font-size: 1.1rem; }
     .boxMain .instructorContainer .imgInstructor {
       grid-area: imagenInstructor;
-      width: 100%; }
-
-/*-------ESTILOS BASE---------*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none; }
-
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #000;
-  color: #f1faee; }
-
-h1 {
-  color: #FFFFFF; }
-
-header {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  background-color: #000;
-  height: 10vh;
-  width: 100%; }
-  header .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 5vw;
-    margin-right: 25;
-    width: fit-content; }
-    header .logo .imgLogo {
-      height: 9vh; }
-  header nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5vw;
-    margin-left: 30vw;
-    /*li a:hover{
-            background-color:#f1faee;
-            color: #000;
-        }*/ }
-    header nav .ulNav {
-      display: flex;
-      height: 10vh; }
-      header nav .ulNav .linkNavBar {
-        display: flex;
-        text-decoration: none;
-        color: #f1faee;
-        font-weight: bold;
-        font-size: 1.2rem;
-        width: 100%;
-        height: 10vh;
-        align-items: center;
-        padding: 20px; }
-      header nav .ulNav .ulDesplegable li {
-        display: block;
-        width: 15vw;
-        padding: 0px;
-        margin-left: 0px; }
-      header nav .ulNav .ulDesplegable {
-        position: absolute;
-        display: none; }
-      header nav .ulNav li:hover .ulDesplegable {
-        display: block;
-        position: absolute;
-        text-align: left;
-        top: 10vh;
-        background-color: #000;
-        color: #f1faee; }
-    header nav li {
-      display: flex;
-      width: fit-content;
-      align-items: center; }
-      header nav li .linkNavBar:hover {
-        background-color: #f1faee;
-        color: #000; }
-    header nav .divNavResponsive {
-      display: none; }
-      header nav .divNavResponsive .imgMenu {
-        width: 50px;
-        height: 25px; }
+      width: 100%;
+      padding-top: 2vh; }
 
 /*--------------ESTILOS------------*/
 .titleForm {
@@ -265,12 +265,11 @@ header {
 .containerForm {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   margin-top: 5vh;
+  margin-bottom: 20vh;
   width: 100%;
   padding-top: 5vh;
-  background-color: #FFFFFF;
-  color: black; }
+  color: #f1faee; }
   .containerForm .infoContact {
     width: 30%;
     display: flex;
@@ -281,10 +280,17 @@ header {
       flex-direction: row;
       margin-top: 15px; }
       .containerForm .infoContact .subContact .logosContact {
-        width: 50px;
-        height: 50px; }
+        width: 40px;
+        height: 40px;
+        margin-top: 10px; }
       .containerForm .infoContact .subContact .textLogoContact {
         margin-left: 10px; }
+        .containerForm .infoContact .subContact .textLogoContact .textContactIconTitle {
+          font-size: 1.3rem;
+          font-weight: 900;
+          margin: 0; }
+        .containerForm .infoContact .subContact .textLogoContact .textContactIcon {
+          font-size: 1.3rem; }
   .containerForm .classForm {
     display: flex;
     flex-direction: column;
@@ -310,18 +316,17 @@ header {
       border-radius: 5px;
       margin-top: 10px; }
     .containerForm .classForm .inputBtn {
-      margin: 20px;
       font-size: 1.5em;
+      font-weight: 900;
+      margin-top: 15px;
+      padding: 5px; }
+    .containerForm .classForm .inputBtn:hover {
+      background-color: #000;
+      color: #DAB400;
       border: solid;
+      border-color: #DAB400;
       border-width: 1px;
-      border-color: #000;
-      color: #000;
-      width: 10vw;
-      background-color: #f1faee; }
-  .containerForm .maps {
-    width: 80%;
-    margin-top: 10vh;
-    margin-left: 20%; }
+      border-radius: 3px; }
 
 /*-------------ESTILOS WORKS-----------*/
 .titleWorks {
@@ -355,12 +360,7 @@ header {
   margin-top: 10vh;
   position: relative;
   display: inline-block;
-  text-align: center;
-  /* background-image: url('../img/banner.jpg');
-    background-position: center;
-    width: 100%;
-    height: 90vh;
-    background-repeat: no-repeat;*/ }
+  text-align: center; }
   .contenedor .banner {
     width: 100%;
     height: auto; }
@@ -401,11 +401,15 @@ main {
     align-items: center;
     margin-top: 5vh; }
     main .aboutUs .titleAboutUS {
-      font-size: 4rem; }
+      font-size: 4rem;
+      margin-bottom: 5vh; }
     main .aboutUs .descriptionAboutUs {
       width: 50%;
-      font-size: 1.2rem;
-      margin-bottom: 5vh; }
+      font-size: 1.5rem;
+      margin-bottom: 5vh;
+      text-align: center; }
+    main .aboutUs .imgAboutUs {
+      width: 50%; }
 
 .sectionIndex {
   width: 100%;
@@ -426,11 +430,53 @@ main {
       width: 50%;
       margin-left: 25%; }
   .sectionIndex .imagesSectionIndex {
-    display: flex; }
-    .sectionIndex .imagesSectionIndex .imgInstructors {
-      width: 50%; }
-    .sectionIndex .imagesSectionIndex .imgStudents {
-      width: 50%; }
+    display: flex;
+    flex-direction: row;
+    height: 40vh; }
+    .sectionIndex .imagesSectionIndex .divImgInstructorIndex {
+      background-image: url("../img/instructors.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .sectionIndex .imagesSectionIndex .divImgStudents {
+      background-image: url("../img/students.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.companiesDiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15vh; }
+  .companiesDiv .sectionCompanies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh; }
+    .companiesDiv .sectionCompanies .titleCompanies {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 900; }
+    .companiesDiv .sectionCompanies .textCompanies {
+      text-align: center;
+      width: 50%;
+      font-size: 1.2rem; }
+  .companiesDiv .companiesImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5vh 5vw; }
+    .companiesDiv .companiesImg .logoCompany {
+      margin: 2vh 2vw; }
 
 .bottom {
   background-image: url("../img/bannerBottom.jpg");
@@ -444,7 +490,6 @@ main {
   .bottom .btnCourses {
     font-size: 1.5rem;
     padding: 10px;
-    text-decoration: none;
     color: #000;
     font-weight: 900; }
   .bottom .btnCourses:hover {
@@ -475,35 +520,67 @@ main {
   .btnMenu {
     background-color: #000;
     border: none; }
-  .imgMenu {
-    background-color: #000;
-    width: 40px;
-    height: 25px; }
-    .imgMenu .aboutUs {
-      margin-top: 2vh; }
-    .imgMenu .descriptionAboutUs {
+    .btnMenu .imgMenu {
+      background-color: #000;
+      width: 40px;
+      height: 25px; }
+  main .aboutUs {
+    width: 100%;
+    margin-top: 2vh; }
+    main .aboutUs .descriptionAboutUs {
       width: 90%; }
-    .imgMenu .imgAboutUs {
+    main .aboutUs .imgAboutUs {
       width: 100%; }
-  .sectionIndex {
+  main .sectionIndex {
     width: 90%; }
-    .sectionIndex .descriptionSectionIndex {
+    main .sectionIndex .descriptionSectionIndex {
       text-align: center;
       margin-bottom: 5vh; }
-      .sectionIndex .descriptionSectionIndex .TitleSectionIndex {
-        font-size: 3rem;
+      main .sectionIndex .descriptionSectionIndex .TitleSectionIndex {
+        font-size: 2rem;
         margin-bottom: 2vh; }
-      .sectionIndex .descriptionSectionIndex .textSectionIndex {
-        font-size: 1.5rem;
-        text-align: left; }
-  .txtCourses {
+      main .sectionIndex .descriptionSectionIndex .textSectionIndex {
+        font-size: 1.2rem;
+        text-align: justify;
+        width: 100%;
+        margin-left: 0%; }
+    main .sectionIndex .imagesSectionIndex {
+      display: flex;
+      flex-direction: column; }
+      main .sectionIndex .imagesSectionIndex .divImgInstructorIndex {
+        background-position: center;
+        background-size: 100%;
+        width: 100%;
+        height: 20vh; }
+      main .sectionIndex .imagesSectionIndex .divImgStudents {
+        background-position: center;
+        background-size: 100%;
+        width: 100%;
+        height: 20vh;
+        text-align: center; }
+  main .companiesDiv {
+    width: 90%; }
+    main .companiesDiv .sectionCompanies .titleCompanies {
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 900; }
+    main .companiesDiv .sectionCompanies .textCompanies {
+      text-align: center;
+      width: 100%;
+      font-size: 1.2rem; }
+    main .companiesDiv .companiesImg {
+      margin: 3vh 3vw; }
+      main .companiesDiv .companiesImg .logoCompany {
+        margin: 1vh 1vw; }
+  main .txtCourses {
     margin-top: 5vh;
     width: 90%;
     text-align: center; }
-    .txtCourses #titleCourses {
+    main .txtCourses #titleCourses {
       margin-bottom: 20px;
       font-size: 3rem; }
-  .subTitleCourses {
+  main .subTitleCourses {
     width: 75%; }
   /*-----------INSTRUCTORS-------------*/
   .boxMain {
@@ -534,39 +611,34 @@ main {
       padding-right: 10px; }
     .boxMain .portfolio {
       margin-bottom: 20px;
-      text-decoration: none; }
-  /*-----------CONTACT US-------------*/ }
+      text-decoration: none; } }
 
 @media (max-width: 768px) {
-  .classForm {
-    width: 100%;
-    margin-left: 5%; }
-  header nav {
-    margin-left: 50%; } }
-
-@media (max-width: 425px) {
-  .classForm {
-    width: 100%;
-    flex-direction: column;
-    align-items: center; }
-    .classForm .divInputs {
-      display: flex;
-      flex-direction: column;
-      width: 100%; }
-      .classForm .divInputs .inputs {
-        padding: 10px;
-        width: 100%;
-        margin: 20px; }
-    .classForm .textAreaContact {
-      padding: 10px;
+  .containerForm {
+    flex-direction: column; }
+    .containerForm .infoContact {
       width: 100%;
-      margin-left: 10%; }
-    .classForm .inputBtn {
-      width: fit-content; }
-  .infoContact {
-    width: 90%;
-    margin-left: 10%; } }
+      margin-left: 5%; }
+    .containerForm .classForm {
+      width: 90%;
+      margin-left: 5%; }
+    .containerForm header nav {
+      margin-left: 50%; } }
 
 @media only screen and (max-width: 426px) and (min-width: 320px) {
   header nav {
-    margin-left: 20vw; } }
+    margin-left: 20vw; }
+  /*----------CONTACT US-----------*/
+  .containerForm {
+    flex-direction: column; }
+    .containerForm .classForm .divInputs {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .containerForm .classForm .divInputs .inputs {
+        width: 90%;
+        margin-bottom: 20px; }
+    .containerForm .classForm .textAreaContact {
+      width: 90%; }
+  header nav {
+    margin-left: 50%; } }
