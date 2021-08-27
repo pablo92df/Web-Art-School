@@ -52,7 +52,7 @@ main{
         align-items: center;
         margin-top: 5vh;
         .titleAboutUS{
-            font-size: 4rem;
+            @extend %titlePages;
             margin-bottom: 5vh;
         }
         .descriptionAboutUs{

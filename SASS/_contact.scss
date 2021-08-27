@@ -1,11 +1,12 @@
 /*--------------ESTILOS------------*/
 .titleForm{
     text-align: center;
-    font-size: 2rem;
-    margin-top: 5vh;
+    @extend %titlePages;
+    margin-top: 15vh;
     border-bottom: solid;
     border-color: black;
     border-width: 1px;
+    
 }
 
 .boxTxtForm{
@@ -19,12 +20,16 @@
         margin-top: 2vh;
     }
 }
+.bannerContact{
+    @extend %bannersGeneral;
+
+}
 .containerForm{
+  
     display: flex;
     flex-direction: row;
     margin-top: 5vh;
     margin-bottom: 20vh;
-
     width: 100%;
     padding-top: 5vh;
     color: #f1faee;

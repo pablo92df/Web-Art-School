@@ -22,6 +22,46 @@ header{
     background-color: #000;
     height: 10vh;
     width: 100%;
+    .navbar{
+        background-color: #000 !important;
+        width: 100% !important;
+        .container{
+           width: 100vw !important;
+            margin: 0;
+            padding: 0;
+            .logo{
+                display: flex;
+                align-items: center;
+                margin-left: 5vw;
+                width: fit-content;
+                height: 9vh !important;
+                .imgLogo{
+                    height: 9vh;
+                }
+            }
+            .navCollapse{
+                .ulNavBarra {
+                    background-color: #000;
+                    .liNav{
+                        display: flex;
+                        .aLinkNavBar{
+                            color: #f1faee;
+                            font-weight: bold;
+                            font-size: 1.2rem;
+                            width: 100%;
+                        }
+                    } 
+                }
+            }
+        }
+        
+        
+    }
+ .aLinkNavBar:hover{
+    
+    color: #DAB400 !important;
+}
+    /*
     .logo{
         display: flex;
         align-items: center;
@@ -37,6 +77,7 @@ header{
         justify-content: flex-end;
         margin-right: 5vw;
         margin-left: 30vw;
+        width: 100%;
         .ulNavBarra {
             display: flex;
             height: 10vh;
@@ -83,10 +124,46 @@ header{
         }
         .divNavResponsive{
             display: none;
-            .imgMenu{
-                width:50px;
-                 height:25px;
-            }
+
         }
-    }   
+    }   */
 }
+/*
+#menuHide{
+    width: 100vw;
+    top: 9.5vh; left: 0vw;
+    transform: translate(0px,-400px);
+    display: block;
+    position: absolute;
+    .ulMenuResponsive{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        padding: 0px !important;
+        .aLinkResponsive{
+            display: flex;
+            text-decoration: none;
+            color: #f1faee;
+            font-weight: bold;
+            font-size: 1.2rem;
+            height: 5vh;
+            margin-top: 5px;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+        } 
+    }
+    .aLinkResponsive:hover{
+        background-color:#f1faee;
+        color: #000;
+    }
+}
+.btnMenu:focus{
+    #menuHide{
+        transform: translate(0px,0px);
+        transition: 1s;
+    }
+}*/
+
+

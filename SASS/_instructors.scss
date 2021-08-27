@@ -18,8 +18,7 @@
         align-items: center;
         margin-bottom: 5vh;
         .titleInstructors{
-            font-size: 3rem;
-            font-weight: 900;
+            @extend %titlePages;
          }
          .subTitlteInstructor{
              width: 50%;

@@ -20,70 +20,144 @@ header {
   flex-direction: row;
   background-color: #000;
   height: 10vh;
-  width: 100%; }
-  header .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 5vw;
-    margin-right: 25;
-    width: fit-content; }
-    header .logo .imgLogo {
-      height: 9vh; }
-  header .navBarra {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5vw;
-    margin-left: 30vw; }
-    header .navBarra .ulNavBarra {
-      display: flex;
-      height: 10vh;
-      padding: 0px !important; }
-      header .navBarra .ulNavBarra .aLinkNavBar {
+  width: 100%;
+  /*
+    .logo{
         display: flex;
-        text-decoration: none;
-        color: #f1faee;
-        font-weight: bold;
-        font-size: 1.2rem;
-        width: 100%;
-        height: 10vh;
         align-items: center;
-        padding: 20px; }
-      header .navBarra .ulNavBarra .ulDesplegable li {
-        display: block;
-        width: 15vw;
-        padding: 0px;
-        margin-left: 0px; }
-      header .navBarra .ulNavBarra .ulDesplegable {
-        position: absolute;
-        display: none;
-        padding: 0px !important; }
-      header .navBarra .ulNavBarra .liNav:hover .ulDesplegable {
-        display: block;
-        position: absolute;
-        text-align: left;
-        top: 10vh;
-        background-color: #000;
-        color: #f1faee; }
-    header .navBarra .liNav {
-      display: flex;
-      width: fit-content;
-      align-items: center; }
-      header .navBarra .liNav .aLinkNavBar:hover {
-        background-color: #f1faee;
-        color: #000; }
-    header .navBarra .divNavResponsive {
-      display: none; }
-      header .navBarra .divNavResponsive .imgMenu {
-        width: 50px;
-        height: 25px; }
+        margin-left: 5vw;
+        margin-right: 25;
+        width: fit-content;
+        .imgLogo{
+            height: 9vh;
+        }
+    }
+    .navBarra{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5vw;
+        margin-left: 30vw;
+        width: 100%;
+        .ulNavBarra {
+            display: flex;
+            height: 10vh;
+            padding: 0px !important;
+            .aLinkNavBar{
+                display: flex;
+                text-decoration: none;
+                color: #f1faee;
+                font-weight: bold;
+                font-size: 1.2rem;
+                width: 100%;
+                height: 10vh;
+                align-items: center;
+                padding: 20px;
+            }
+            .ulDesplegable li {
+                display: block;
+                width: 15vw;
+                padding: 0px;
+                margin-left: 0px;
+            }
+            .ulDesplegable {
+                position: absolute;
+                display: none; 
+                padding: 0px !important;
+            }
+            .liNav:hover .ulDesplegable {
+                display:block;
+                position: absolute;
+                text-align: left; 
+                top: 10vh;
+                background-color: #000;
+                color: #f1faee;
+            }
+        }
+        .liNav {
+            display: flex;
+            width: fit-content;
+            align-items: center;
+            .aLinkNavBar:hover{
+                background-color:#f1faee;
+                color: #000;
+            }
+        }
+        .divNavResponsive{
+            display: none;
 
+        }
+    }   */ }
+  header .navbar {
+    background-color: #000 !important;
+    width: 100% !important; }
+    header .navbar .container {
+      width: 100vw !important;
+      margin: 0;
+      padding: 0; }
+      header .navbar .container .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 5vw;
+        width: fit-content;
+        height: 9vh !important; }
+        header .navbar .container .logo .imgLogo {
+          height: 9vh; }
+      header .navbar .container .navCollapse .ulNavBarra {
+        background-color: #000; }
+        header .navbar .container .navCollapse .ulNavBarra .liNav {
+          display: flex; }
+          header .navbar .container .navCollapse .ulNavBarra .liNav .aLinkNavBar {
+            color: #f1faee;
+            font-weight: bold;
+            font-size: 1.2rem;
+            width: 100%; }
+  header .aLinkNavBar:hover {
+    color: #DAB400 !important; }
+
+/*
+#menuHide{
+    width: 100vw;
+    top: 9.5vh; left: 0vw;
+    transform: translate(0px,-400px);
+    display: block;
+    position: absolute;
+    .ulMenuResponsive{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        padding: 0px !important;
+        .aLinkResponsive{
+            display: flex;
+            text-decoration: none;
+            color: #f1faee;
+            font-weight: bold;
+            font-size: 1.2rem;
+            height: 5vh;
+            margin-top: 5px;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+        } 
+    }
+    .aLinkResponsive:hover{
+        background-color:#f1faee;
+        color: #000;
+    }
+}
+.btnMenu:focus{
+    #menuHide{
+        transform: translate(0px,0px);
+        transition: 1s;
+    }
+}*/
 .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses, .containerForm .classForm .inputBtn, .bottom .btnCourses {
   background-color: #DAB400;
   border: none;
   border-radius: 5px;
   width: fit-content; }
 
-.bannerCursos, .bannerInstructors {
+.bannerCursos, .bannerInstructors, .bannerContact {
   width: 100%;
   margin-top: 15vh; }
 
@@ -94,6 +168,10 @@ header {
   font-weight: 900;
   color: #FFF; }
 
+.txtCourses #titleCourses, .boxMain .boxTitleInstructors .titleInstructors, .titleForm, .titleWorks, main .aboutUs .titleAboutUS {
+  font-size: 3rem;
+  font-weight: 900; }
+
 /*----------ESTILOS CURSOS-----------*/
 .txtCourses {
   display: flex;
@@ -103,9 +181,7 @@ header {
   text-align: center; }
   .txtCourses #titleCourses {
     display: flex;
-    margin-bottom: 20px;
-    font-size: 3rem;
-    font-weight: 900; }
+    margin-bottom: 20px; }
 
 .subTitleCourses {
   display: flex;
@@ -121,7 +197,7 @@ header {
   .containerCursos .Cursos {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 20vw;
     margin: 20px;
     padding: 25px;
     background-color: #242424;
@@ -204,9 +280,6 @@ footer {
     text-align: center;
     align-items: center;
     margin-bottom: 5vh; }
-    .boxMain .boxTitleInstructors .titleInstructors {
-      font-size: 3rem;
-      font-weight: 900; }
     .boxMain .boxTitleInstructors .subTitlteInstructor {
       width: 50%; }
   .boxMain .instructorContainer {
@@ -246,8 +319,7 @@ footer {
 /*--------------ESTILOS------------*/
 .titleForm {
   text-align: center;
-  font-size: 2rem;
-  margin-top: 5vh;
+  margin-top: 15vh;
   border-bottom: solid;
   border-color: black;
   border-width: 1px; }
@@ -339,17 +411,51 @@ footer {
   position: relative;
   display: inline-block; }
 
+.titleSpeedDrawing {
+  text-align: center;
+  margin-top: 15vh;
+  font-size: 2rem; }
+
 .containerVideos {
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw; }
+  .containerVideos .divVideo {
+    margin: 3vw;
+    background-color: #242424;
+    border-top: solid;
+    border-left: solid;
+    border-color: #5e5e5e;
+    border-width: 1px;
+    width: 22vw;
+    padding: 10px; }
+    .containerVideos .divVideo iframe {
+      width: 100%;
+      height: 35vh; }
+
+.sectionExperienceStudents {
   margin-top: 15vh;
   width: 90%;
-  z-index: -2; }
-  .containerVideos .divVideo {
-    margin-top: 10px; }
-    .containerVideos .divVideo .card {
-      /* background-color:rgb(36, 36, 36);*/ }
-      .containerVideos .divVideo .card iframe {
-        width: 100%;
-        height: 350px; }
+  text-align: center; }
+  .sectionExperienceStudents .titleExperience {
+    margin-bottom: 5vh; }
+  .sectionExperienceStudents .divExperiencieStudents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15vh; }
+    .sectionExperienceStudents .divExperiencieStudents .student {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 20vw; }
+      .sectionExperienceStudents .divExperiencieStudents .student .imgStudent {
+        border-radius: 50%; }
+      .sectionExperienceStudents .divExperiencieStudents .student .textStudent {
+        padding: 25px; }
 
 /*----------ESTILO INDEX----------*/
 .bi-twitch {
@@ -401,7 +507,6 @@ main {
     align-items: center;
     margin-top: 5vh; }
     main .aboutUs .titleAboutUS {
-      font-size: 4rem;
       margin-bottom: 5vh; }
     main .aboutUs .descriptionAboutUs {
       width: 50%;
@@ -497,6 +602,7 @@ main {
     color: #DAB400; }
 
 /*------------ESTILOS RESPONSIVE----------*/
+/*---------1024-------*/
 @media (max-width: 1024px) {
   .infoContact {
     margin-left: 5%; }
@@ -505,25 +611,92 @@ main {
     .boxMain .instructorContainer {
       grid-template-columns: 25vw 40vw;
       grid-template-rows: 5vh 20vh 5vh; }
-  header nav {
-    margin-left: 5vw; } }
+  /*header{
+        .navBarra{
+            margin-left: 5vw;
+        }
+    }*/
+  .containerCursos .Cursos {
+    width: 35vw; }
+  .containerForm .infoContact {
+    margin-left: 5%; }
+  .sectionExperienceStudents .divExperiencieStudents .student {
+    width: 35vw; }
+  .containerVideos {
+    width: 100vw; }
+    .containerVideos .divVideo {
+      width: 40vw; }
+      .containerVideos .divVideo iframe {
+        height: 35vh; } }
 
+/*---------768-------*/
+@media (max-width: 768px) {
+  .containerForm {
+    flex-direction: column; }
+    .containerForm .infoContact {
+      width: 100%;
+      margin-left: 5%; }
+    .containerForm .classForm {
+      width: 90%;
+      margin-left: 5%; }
+  .containerCursos .Cursos {
+    width: 40vw; }
+  .bannerInstructors {
+    width: 125%; }
+  .sectionExperienceStudents .divExperiencieStudents .student {
+    width: 40vw; } }
+
+/*---------425-------*/
+@media (max-width: 425px) {
+  /*header{
+        .navBarra{
+            margin-left: 0px;
+            .divNavResponsive{
+               
+                margin-left: 20vw;
+            }
+        }
+    }*/
+  .containerCursos .Cursos {
+    width: 80vw; }
+  .bannerInstructors {
+    width: 150%; }
+  .imagesSectionIndex {
+    height: 48vh !important; }
+    .imagesSectionIndex .divImgInstructorIndex {
+      height: 24vh !important; }
+    .imagesSectionIndex .divImgStudents {
+      height: 24vh !important; } }
+
+/*---------375-------*/
+@media only screen and (max-width: 375px) {
+  header .navBarra .divNavResponsive {
+    margin-left: 13vw; } }
+
+/*---------320-------*/
+@media only screen and (max-width: 320px) {
+  .subTitleCourses {
+    width: 90% !important; }
+  header .navbar .container .logo {
+    margin-left: 0vw;
+    width: 50%;
+    height: auto; }
+  .imagesSectionIndex {
+    height: 48vh !important; }
+    .imagesSectionIndex .divImgInstructorIndex {
+      height: 24vh !important; }
+    .imagesSectionIndex .divImgStudents {
+      height: 24vh !important; } }
+
+/*---------768-----AND-------320-------*/
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   /*---------INDEX-----------------*/
-  header nav {
-    margin-left: 50%; }
-    header nav .ulNav {
-      display: none; }
-    header nav .divNavResponsive {
-      display: flex;
-      justify-content: flex-end; }
-  .btnMenu {
-    background-color: #000;
-    border: none; }
-    .btnMenu .imgMenu {
-      background-color: #000;
-      width: 40px;
-      height: 25px; }
+  header .navbar .container .logo {
+    margin-left: 2vw; }
+  header .navbar .container .navCollapse .ulNavBarra .liNav {
+    padding-left: 5vw; }
+    header .navbar .container .navCollapse .ulNavBarra .liNav .aLinkNavBar {
+      height: 5vh; }
   main .aboutUs {
     width: 100%;
     margin-top: 2vh; }
@@ -532,7 +705,7 @@ main {
     main .aboutUs .imgAboutUs {
       width: 100%; }
   main .sectionIndex {
-    width: 90%; }
+    width: 100%; }
     main .sectionIndex .descriptionSectionIndex {
       text-align: center;
       margin-bottom: 5vh; }
@@ -541,22 +714,23 @@ main {
         margin-bottom: 2vh; }
       main .sectionIndex .descriptionSectionIndex .textSectionIndex {
         font-size: 1.2rem;
-        text-align: justify;
-        width: 100%;
-        margin-left: 0%; }
+        text-align: center;
+        width: 90%;
+        margin-left: 5%; }
     main .sectionIndex .imagesSectionIndex {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      height: 50vh; }
       main .sectionIndex .imagesSectionIndex .divImgInstructorIndex {
         background-position: center;
         background-size: 100%;
         width: 100%;
-        height: 20vh; }
+        height: 25vh; }
       main .sectionIndex .imagesSectionIndex .divImgStudents {
         background-position: center;
         background-size: 100%;
         width: 100%;
-        height: 20vh;
+        height: 25vh;
         text-align: center; }
   main .companiesDiv {
     width: 90%; }
@@ -582,6 +756,8 @@ main {
       font-size: 3rem; }
   main .subTitleCourses {
     width: 75%; }
+  .moreInfo {
+    text-align: justify; }
   /*-----------INSTRUCTORS-------------*/
   .boxMain {
     width: 90%;
@@ -613,21 +789,8 @@ main {
       margin-bottom: 20px;
       text-decoration: none; } }
 
-@media (max-width: 768px) {
-  .containerForm {
-    flex-direction: column; }
-    .containerForm .infoContact {
-      width: 100%;
-      margin-left: 5%; }
-    .containerForm .classForm {
-      width: 90%;
-      margin-left: 5%; }
-    .containerForm header nav {
-      margin-left: 50%; } }
-
+/*--------426-----AND------320-------*/
 @media only screen and (max-width: 426px) and (min-width: 320px) {
-  header nav {
-    margin-left: 20vw; }
   /*----------CONTACT US-----------*/
   .containerForm {
     flex-direction: column; }
@@ -640,5 +803,13 @@ main {
         margin-bottom: 20px; }
     .containerForm .classForm .textAreaContact {
       width: 90%; }
-  header nav {
-    margin-left: 50%; } }
+  .containerCursos .Cursos {
+    width: 80vw; }
+  .sectionExperienceStudents .divExperiencieStudents .student {
+    width: 90vw; }
+  .containerVideos {
+    width: 100vw; }
+    .containerVideos .divVideo {
+      width: 90vw; }
+      .containerVideos .divVideo iframe {
+        height: 35vh; } }

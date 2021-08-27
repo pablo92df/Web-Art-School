@@ -1,4 +1,6 @@
 /*------------ESTILOS RESPONSIVE----------*/
+
+/*---------1024-------*/
 @media (max-width: 1024px) {
     .infoContact{
         margin-left: 5%;
@@ -10,37 +12,175 @@
             grid-template-rows: 5vh 20vh 5vh;
         }
     }
-    header{
-        nav{
+    /*header{
+        .navBarra{
             margin-left: 5vw;
         }
+    }*/
+    .containerCursos{
+        
+        .Cursos{
+            width: 35vw;
+        }
     }
-    
+    .containerForm{
+        
+        .infoContact{
+        
+            margin-left: 5%;
+        }
+    }  
+    .sectionExperienceStudents{
+        .divExperiencieStudents{
+        
+            .student{
+                width: 35vw;
+            }
+        }
+    }
+    .containerVideos{
+        width: 100vw;
+        .divVideo{
+         
+            width: 40vw;
+            iframe{
+                height: 35vh;
+            }
+            
+        }
+     }
   }
+  
+/*---------768-------*/
+
+@media (max-width: 768px) {
+    .containerForm{
+        flex-direction: column;
+        .infoContact{
+            width: 100%;
+            margin-left: 5%;
+        }
+        .classForm{
+            width: 90%;
+            margin-left: 5%;
+        }
+      
+    } 
+    .containerCursos{
+        
+        .Cursos{
+            width: 40vw;
+        }
+    }  
+
+    .bannerInstructors{
+        width: 125%;
+    }
+  
+    .sectionExperienceStudents{
+        .divExperiencieStudents{
+        
+            .student{
+                width: 40vw;
+            }
+        }
+    }
+}
+
+/*---------425-------*/
+
+@media (max-width: 425px) {
+    /*header{
+        .navBarra{
+            margin-left: 0px;
+            .divNavResponsive{
+               
+                margin-left: 20vw;
+            }
+        }
+    }*/
+    .containerCursos{
+        
+        .Cursos{
+            width: 80vw;
+        }
+    }
+    .bannerInstructors{
+        width: 150%;
+    }
+    .imagesSectionIndex{
+        height: 48vh !important;
+        .divImgInstructorIndex{
+            height: 24vh !important;
+        }
+        .divImgStudents{
+            height: 24vh !important;
+        }
+    }
+
+}
+
+/*---------375-------*/
+@media only screen and (max-width: 375px){
+    header{
+        .navBarra{
+            .divNavResponsive{
+               
+                margin-left: 13vw;
+            }
+        }
+    }
+}
+/*---------320-------*/
+@media only screen and (max-width: 320px){
+    .subTitleCourses{
+        width: 90% !important;
+    }
+    header {
+        .navbar{
+            .container{
+                .logo{
+                    margin-left: 0vw; 
+                    width: 50%; 
+                    height: auto;
+                }
+            }
+        }
+    } 
+    .imagesSectionIndex{
+        height: 48vh !important;
+        .divImgInstructorIndex{
+            height: 24vh !important;
+        }
+        .divImgStudents{
+            height: 24vh !important;
+        }
+    }
+}
+/*---------768-----AND-------320-------*/
+
 @media only screen and (max-width: 768px) and (min-width: 320px) {
     /*---------INDEX-----------------*/
-   
-    header{
-        nav{
-            margin-left: 50%;
-            .ulNav{
-                display: none;
-            }
-            .divNavResponsive{
-                display:flex;
-                justify-content: flex-end;
+    header {
+        .navbar{
+            .container{
+                .logo{
+                    margin-left: 2vw;  
+                }
+                .navCollapse{
+                .ulNavBarra {
+                    .liNav{
+                        padding-left: 5vw;
+                        .aLinkNavBar{
+                            height: 5vh;
+                            
+                            }
+                        } 
+                    }
+                }
             }
         }
-    }
-    .btnMenu{
-        background-color: #000;
-        border: none;
-        .imgMenu{
-            background-color: #000;
-            width: 40px;
-            height: 25px;
-        }
-    }
+    } 
     main{
         .aboutUs{
             width: 100%;
@@ -53,7 +193,7 @@
             }
         }
         .sectionIndex{
-            width: 90%;
+            width: 100%;
             .descriptionSectionIndex{
                 text-align: center;
                 margin-bottom: 5vh;
@@ -63,25 +203,26 @@
                 }
                 .textSectionIndex{
                     font-size: 1.2rem;
-                    text-align: justify;
-                    width: 100%;
-                    margin-left: 0%;
+                    text-align: center;
+                    width: 90%;
+                    margin-left: 5%;
                 }
             }
             .imagesSectionIndex{
                 display: flex;
                 flex-direction: column;
+                height: 50vh;
                 .divImgInstructorIndex{
                     background-position: center; 
                     background-size: 100%;
                     width: 100%;
-                    height: 20vh;
+                    height: 25vh;
                 }
                 .divImgStudents{
                     background-position: center; 
                     background-size: 100%;
                     width: 100%;
-                    height: 20vh;
+                    height: 25vh;
                     text-align: center;
                 }
             }
@@ -123,7 +264,10 @@
         }
     }
     
-    
+    .moreInfo{
+        text-align:justify;
+       
+    }
 
     
 /*-----------INSTRUCTORS-------------*/
@@ -165,34 +309,10 @@
     
 
 }
-@media (max-width: 768px) {
-    .containerForm{
-        flex-direction: column;
-        .infoContact{
-            width: 100%;
-            margin-left: 5%;
-        }
-        .classForm{
-            width: 90%;
-            margin-left: 5%;
-        }
-        header{
-            nav{
-                margin-left: 50%;
-            }
-        }
-    }   
-}
-@media (max-width: 425px) {
-    
-  
-}
+/*--------426-----AND------320-------*/
+
 @media only screen and (max-width: 426px) and (min-width: 320px){
-    header{
-        nav{
-            margin-left: 20vw;
-        }
-    }
+   
     /*----------CONTACT US-----------*/
     .containerForm{
         flex-direction: column;
@@ -213,10 +333,30 @@
         }
         
     }   
-    header{
-        nav{
-            margin-left: 50%;
+   
+
+    .containerCursos{
+        
+        .Cursos{
+            width: 80vw;
         }
     }
-
+    .sectionExperienceStudents{
+        .divExperiencieStudents{
+        
+            .student{
+                width: 90vw;
+            }
+        }
+    }
+    .containerVideos{
+        width: 100vw;
+        .divVideo{
+         
+            width: 90vw;
+            iframe{
+                height: 35vh;
+            }
+        }
+     }
 }

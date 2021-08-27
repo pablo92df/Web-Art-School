@@ -7,37 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Drawing, Animatión, Illustration, Digital painting, Concept Art, Art, Art Courses">
     <meta name="description" content="Somos una escuela moderna de arte con foco en la industria de la creacion de contenido visuales">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
-
     <title>Home</title>
 </head>
 <body>
-   <header>
-    <a href="index.html" class="logo"><img src="img/logo.jpg" alt="name school logo" class="imgLogo" ></a>
-    <nav class="navBarra">
-        <ul class="ulNavBarra">
-             <li class="liNav"><a class="aLinkNavBar" href="index.html">HOME</a></li>
-             <li class="liNav"><a class="aLinkNavBar" href="courses.html">COURSES</a>
-                 <ul class="ulDesplegable">
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#DigitalPainting">DIGITAL PAINTING</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#CharacterDesing">CHARACTER DESING</a> </li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">PAINTING ENVIRONMENTS</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">CARTOONS</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">EDITORIAL ILLUSTRATION</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">LIGHTING</a></li>
-                 </ul>
-             </li>
-             <li class="liNav"><a class="aLinkNavBar" href="instructors.html">INSTRUCTORS</a></li>
-             <li class="liNav"><a class="aLinkNavBar" href="works.html">WORKS</a> </li>
-             <li class="liNav"><a class="aLinkNavBar" href="contact.html">CONTACT</a></li>
-         </ul>
-         <div class="divNavResponsive">
-             <button class="btnMenu"><img class="imgMenu"src="img/menu.png" alt="" width="50px" height="25px"></button>
-         </div>
-    </nav>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid container">
+          <a class="navbar-brand logo" href="#"><img src="img/logo.jpg" alt="name school logo" class="imgLogo" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navCollapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulNavBarra">
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="index.html">HOME</a></li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="courses.html">COURSES</a></li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="instructors.html">INSTRUCTORS</a></li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="works.html">WORKS</a> </li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
    </header>
    <div class="contenedor">
     <img src="img/banner.jpg" alt="" class="banner">
@@ -98,4 +93,7 @@
             <a href="https://www.twitch.tv/" target="_blank" ><img src="img/twitch.png" alt="Twitch logo"class="logos" ></a>
         </div>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>

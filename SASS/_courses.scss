@@ -12,8 +12,7 @@
     #titleCourses{
         display: flex;
         margin-bottom: 20px;
-        font-size: 3rem;
-        font-weight: 900;
+        @extend %titlePages;
     }
 }
 .subTitleCourses{
@@ -31,7 +30,7 @@
     .Cursos{
         display: flex;
         flex-direction: column;
-        width: 350px;
+        width: 20vw;
         margin: 20px;
         padding: 25px;
         background-color:rgb(36, 36, 36);
@@ -39,7 +38,7 @@
         border-left: solid;
         border-color: rgb(94, 94, 94);
         border-width: 1px;
-         transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
          .nameCourses{
             text-decoration: underline;
             text-decoration-color: #DAB400;
