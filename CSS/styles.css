@@ -19,74 +19,8 @@ header {
   display: flex;
   flex-direction: row;
   background-color: #000;
-  height: 10vh;
-  width: 100%;
-  /*
-    .logo{
-        display: flex;
-        align-items: center;
-        margin-left: 5vw;
-        margin-right: 25;
-        width: fit-content;
-        .imgLogo{
-            height: 9vh;
-        }
-    }
-    .navBarra{
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 5vw;
-        margin-left: 30vw;
-        width: 100%;
-        .ulNavBarra {
-            display: flex;
-            height: 10vh;
-            padding: 0px !important;
-            .aLinkNavBar{
-                display: flex;
-                text-decoration: none;
-                color: #f1faee;
-                font-weight: bold;
-                font-size: 1.2rem;
-                width: 100%;
-                height: 10vh;
-                align-items: center;
-                padding: 20px;
-            }
-            .ulDesplegable li {
-                display: block;
-                width: 15vw;
-                padding: 0px;
-                margin-left: 0px;
-            }
-            .ulDesplegable {
-                position: absolute;
-                display: none; 
-                padding: 0px !important;
-            }
-            .liNav:hover .ulDesplegable {
-                display:block;
-                position: absolute;
-                text-align: left; 
-                top: 10vh;
-                background-color: #000;
-                color: #f1faee;
-            }
-        }
-        .liNav {
-            display: flex;
-            width: fit-content;
-            align-items: center;
-            .aLinkNavBar:hover{
-                background-color:#f1faee;
-                color: #000;
-            }
-        }
-        .divNavResponsive{
-            display: none;
-
-        }
-    }   */ }
+  height: max-content;
+  width: 100%; }
   header .navbar {
     background-color: #000 !important;
     width: 100% !important; }
@@ -98,6 +32,7 @@ header {
         display: flex;
         align-items: center;
         margin-left: 5vw;
+        width: -moz-fit-content;
         width: fit-content;
         height: 9vh !important; }
         header .navbar .container .logo .imgLogo {
@@ -111,46 +46,13 @@ header {
             font-weight: bold;
             font-size: 1.2rem;
             width: 100%; }
+  header .navbar-dark .navbar-toggler {
+    color: #f1faee !important;
+    border-color: #f1faee !important;
+    margin-right: 20px; }
   header .aLinkNavBar:hover {
     color: #DAB400 !important; }
 
-/*
-#menuHide{
-    width: 100vw;
-    top: 9.5vh; left: 0vw;
-    transform: translate(0px,-400px);
-    display: block;
-    position: absolute;
-    .ulMenuResponsive{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        background-color: #000;
-        padding: 0px !important;
-        .aLinkResponsive{
-            display: flex;
-            text-decoration: none;
-            color: #f1faee;
-            font-weight: bold;
-            font-size: 1.2rem;
-            height: 5vh;
-            margin-top: 5px;
-            width: 100vw;
-            align-items: center;
-            justify-content: center;
-        } 
-    }
-    .aLinkResponsive:hover{
-        background-color:#f1faee;
-        color: #000;
-    }
-}
-.btnMenu:focus{
-    #menuHide{
-        transform: translate(0px,0px);
-        transition: 1s;
-    }
-}*/
 .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses, .containerForm .classForm .inputBtn, .bottom .btnCourses {
   background-color: #DAB400;
   border: none;
@@ -226,6 +128,7 @@ header {
         width: 100%;
         font-weight: bold; }
         .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses {
+          width: -moz-fit-content;
           margin-left: 20%;
           padding: 10px; }
           .containerCursos .Cursos .boxDescriptionCourses .bottomCourses .buttonCourses .moreInfo {
@@ -404,6 +307,12 @@ footer {
 .titleWorks {
   text-align: center; }
 
+.textWorks {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh; }
+
 .containerBannerWorks {
   z-index: -1;
   margin-top: 20vh;
@@ -477,25 +386,15 @@ footer {
     top: 15%;
     left: 30%;
     transform: translate(-50%, -50%); }
-  .contenedor .btnBanner {
-    font-size: 2em;
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    background-color: #DAB400;
+  .contenedor .tituloSubIndex {
     color: #f1faee;
-    border: none; }
-
-.tituloSubIndex {
-  color: #f1faee;
-  font-size: 3em;
-  text-decoration: underline;
-  text-decoration-color: #DAB400;
-  position: absolute;
-  top: 25%;
-  left: 30%;
-  transform: translate(-50%, -50%); }
+    font-size: 3em;
+    text-decoration: underline;
+    text-decoration-color: #DAB400;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%); }
 
 main {
   display: flex;
@@ -593,6 +492,7 @@ main {
   align-items: center;
   justify-content: center; }
   .bottom .btnCourses {
+    width: -moz-fit-content;
     font-size: 1.5rem;
     padding: 10px;
     color: #000;
@@ -602,8 +502,27 @@ main {
     color: #DAB400; }
 
 /*------------ESTILOS RESPONSIVE----------*/
+@media (max-width: 1920px) {
+  .contenedor .tituloIndex {
+    font-size: 8em; }
+  .contenedor .tituloSubIndex {
+    font-size: 8em;
+    top: 35%; } }
+
+@media (max-width: 1440px) {
+  .contenedor .tituloIndex {
+    font-size: 7em; }
+  .contenedor .tituloSubIndex {
+    font-size: 7em;
+    top: 40%; } }
+
 /*---------1024-------*/
 @media (max-width: 1024px) {
+  .contenedor .tituloIndex {
+    font-size: 5em; }
+  .contenedor .tituloSubIndex {
+    font-size: 5em;
+    top: 35%; }
   .infoContact {
     margin-left: 5%; }
   .boxMain {
@@ -611,11 +530,6 @@ main {
     .boxMain .instructorContainer {
       grid-template-columns: 25vw 40vw;
       grid-template-rows: 5vh 20vh 5vh; }
-  /*header{
-        .navBarra{
-            margin-left: 5vw;
-        }
-    }*/
   .containerCursos .Cursos {
     width: 35vw; }
   .containerForm .infoContact {
@@ -631,6 +545,10 @@ main {
 
 /*---------768-------*/
 @media (max-width: 768px) {
+  .contenedor .tituloIndex {
+    font-size: 4em; }
+  .contenedor .tituloSubIndex {
+    font-size: 4em; }
   .containerForm {
     flex-direction: column; }
     .containerForm .infoContact {
@@ -641,28 +559,34 @@ main {
       margin-left: 5%; }
   .containerCursos .Cursos {
     width: 40vw; }
-  .bannerInstructors {
-    width: 125%; }
   .sectionExperienceStudents .divExperiencieStudents .student {
-    width: 40vw; } }
+    width: 40vw; }
+  .imagesSectionIndex {
+    height: 80vh !important; }
+    .imagesSectionIndex .divImgInstructorIndex {
+      height: 40vh; }
+    .imagesSectionIndex .divImgStudents {
+      height: 40vh; } }
+
+/*--------550-------*/
+@media only screen and (max-width: 550px) {
+  .containerCursos .Cursos {
+    width: 80vw; } }
 
 /*---------425-------*/
 @media (max-width: 425px) {
-  /*header{
-        .navBarra{
-            margin-left: 0px;
-            .divNavResponsive{
-               
-                margin-left: 20vw;
-            }
-        }
-    }*/
+  .contenedor .tituloIndex {
+    font-size: 3em;
+    top: 33%;
+    left: 40%; }
+  .contenedor .tituloSubIndex {
+    font-size: 3em;
+    top: 65%;
+    left: 40%; }
   .containerCursos .Cursos {
     width: 80vw; }
-  .bannerInstructors {
-    width: 150%; }
   .imagesSectionIndex {
-    height: 48vh !important; }
+    height: 40vh !important; }
     .imagesSectionIndex .divImgInstructorIndex {
       height: 24vh !important; }
     .imagesSectionIndex .divImgStudents {
@@ -670,33 +594,41 @@ main {
 
 /*---------375-------*/
 @media only screen and (max-width: 375px) {
+  .contenedor .tituloSubIndex {
+    top: 75%; }
   header .navBarra .divNavResponsive {
-    margin-left: 13vw; } }
+    margin-left: 13vw; }
+  .companiesDiv .companiesImg .logoCompany {
+    width: 120px; } }
 
 /*---------320-------*/
 @media only screen and (max-width: 320px) {
   .subTitleCourses {
     width: 90% !important; }
   header .navbar .container .logo {
-    margin-left: 0vw;
+    margin-left: 20px;
     width: 50%;
     height: auto; }
+  header .navbar .container .ulNavBarra {
+    margin-left: 10px; }
   .imagesSectionIndex {
-    height: 48vh !important; }
+    height: 35vh !important; }
     .imagesSectionIndex .divImgInstructorIndex {
       height: 24vh !important; }
     .imagesSectionIndex .divImgStudents {
-      height: 24vh !important; } }
+      height: 24vh !important;
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 /*---------768-----AND-------320-------*/
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   /*---------INDEX-----------------*/
-  header .navbar .container .logo {
-    margin-left: 2vw; }
-  header .navbar .container .navCollapse .ulNavBarra .liNav {
-    padding-left: 5vw; }
-    header .navbar .container .navCollapse .ulNavBarra .liNav .aLinkNavBar {
-      height: 5vh; }
+  header {
+    height: max-content; }
+    header .navbar .container .navCollapse .ulNavBarra .liNav {
+      padding-left: 5vw; }
+      header .navbar .container .navCollapse .ulNavBarra .liNav .aLinkNavBar {
+        height: 5vh; }
   main .aboutUs {
     width: 100%;
     margin-top: 2vh; }
@@ -719,18 +651,11 @@ main {
         margin-left: 5%; }
     main .sectionIndex .imagesSectionIndex {
       display: flex;
-      flex-direction: column;
-      height: 50vh; }
+      flex-direction: column; }
       main .sectionIndex .imagesSectionIndex .divImgInstructorIndex {
-        background-position: center;
-        background-size: 100%;
-        width: 100%;
-        height: 25vh; }
+        width: 100%; }
       main .sectionIndex .imagesSectionIndex .divImgStudents {
-        background-position: center;
-        background-size: 100%;
         width: 100%;
-        height: 25vh;
         text-align: center; }
   main .companiesDiv {
     width: 90%; }
@@ -745,8 +670,6 @@ main {
       font-size: 1.2rem; }
     main .companiesDiv .companiesImg {
       margin: 3vh 3vw; }
-      main .companiesDiv .companiesImg .logoCompany {
-        margin: 1vh 1vw; }
   main .txtCourses {
     margin-top: 5vh;
     width: 90%;
@@ -787,7 +710,9 @@ main {
       padding-right: 10px; }
     .boxMain .portfolio {
       margin-bottom: 20px;
-      text-decoration: none; } }
+      text-decoration: none; }
+  .boxTxtForm .txtForm {
+    width: 90%; } }
 
 /*--------426-----AND------320-------*/
 @media only screen and (max-width: 426px) and (min-width: 320px) {
@@ -803,8 +728,6 @@ main {
         margin-bottom: 20px; }
     .containerForm .classForm .textAreaContact {
       width: 90%; }
-  .containerCursos .Cursos {
-    width: 80vw; }
   .sectionExperienceStudents .divExperiencieStudents .student {
     width: 90vw; }
   .containerVideos {

@@ -7,44 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Drawing, Animatión, Illustration, Digital painting, Concept Art, Art, Art Courses">
     <meta name="description" content="Acompañamos en todo el desarrollo a nuestros estudiantes para que tengan la mejor experiencia">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/styles.css">
 
     <title>Students-Works/Students-experiencie</title>
 </head>
 <body>
    <header>
-    <a href="index.html" class="logo"><img src="img/logo.jpg" alt="name school logo" class="imgLogo" ></a>
-       <nav class="navBarra">
-        <ul class="ulNavBarra">
-             <li class="liNav"><a class="aLinkNavBar" href="index.html">HOME</a></li>
-             <li class="liNav"><a class="aLinkNavBar" href="courses.html">COURSES</a>
-                 <ul class="ulDesplegable">
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#DigitalPainting">DIGITAL PAINTING</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#CharacterDesing">CHARACTER DESING</a> </li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">PAINTING ENVIRONMENTS</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">CARTOONS</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">EDITORIAL ILLUSTRATION</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">LIGHTING</a></li>
-                 </ul>
-             </li>
-             <li class="liNav"><a class="aLinkNavBar" href="instructors.html">INSTRUCTORS</a></li>
-             <li class="liNav"><a class="aLinkNavBar" href="works.html">WORKS</a> </li>
-             <li class="liNav"><a class="aLinkNavBar" href="contact.html">CONTACT</a></li>
-         </ul>
-         <div class="divNavResponsive">
-             <button class="btnMenu"><img class="imgMenu"src="img/menu.png" alt="" ></button>
-         </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid container">
+        <a class="navbar-brand logo" href="index.html"><img src="img/logo.jpg" alt="name school logo" class="imgLogo" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navCollapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulNavBarra">
+              <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="index.html">HOME</a></li>
+              <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="courses.html">COURSES</a></li>
+              <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="instructors.html">INSTRUCTORS</a></li>
+              <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="works.html">WORKS</a> </li>
+              <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-
    </header>
    <main>
     
       <div id="carouselExampleDark" class="carousel carousel-white slide containerBannerWorks" data-bs-ride="carousel">
           <h1 class="titleWorks">Works of our students</h1>
+          <h2 class="textWorks">This is the space dedicated to our students and you can be part of it.</h2>
           
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,22 +50,22 @@
             <div class="carousel-item active" data-bs-interval="5000">
               <img src="img/carrousel 1.jpg" class="d-block w-100" alt="" >
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="nameStudent">NAME STUDENTS</h5>
-                <p class="descriptionStudent">Some representative placeholder content for the first slide.</p>
+                <h5 class="nameStudent">Juliette Aristides</h5>
+                <p class="descriptionStudent">Painting Environments: A great course! I feel so inspired!.</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img src="img/carrousel 2.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="nameStudent">NAME STUDENTS</h5>
-                <p class="descriptionStudent">Some representative placeholder content for the second slide.</p>
+                <h5 class="nameStudent">Steve Huston</h5>
+                <p class="descriptionStudent">Character Desing: It's a great practical course, I'm still doing it and enjoying it.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="img/carrousel 3.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="nameStudent">NAME STUDENTS</h5>
-                <p class="descriptionStudent">Some representative placeholder content for the third slide.</p>
+                <h5 class="nameStudent">Glenn Vilppu</h5>
+                <p class="descriptionStudent">Digital Painting; is very informative, easy to follow, and the course is a treasure trove of techniques and inspiration.</p>
               </div>
             </div>
           </div>
@@ -84,26 +79,26 @@
           </button>
         </div>
       <div>
-        <h2 class="titleSpeedDrawing">How Learn to work our students</h2>
+        <h2 class="titleSpeedDrawing">Our community is filled with dedicated students producing awesome work.</h2>
         <div class="containerVideos">
           <div class="divVideo">
             <iframe src="https://www.youtube.com/embed/ULCPwurtiDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <div class="textStudent">
-                <h4>Name Student</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos atque soluta sequi laboriosam, modi ipsum error provident, ipsam obcaecati corporis minima dolorem dolor blanditiis, architecto animi et magni vel.</p>
+                <h4>Robert Bodem</h4>
+                <p>We really like the course, it gave us both a big push in our creativity and we learned some fun new techniques to play with.</p>
               </div>
           </div>
           <div class="divVideo">
             <iframe  src="https://www.youtube.com/embed/Trz0r-0ULtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="textStudent">
-                <h4>Name Student</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos atque soluta sequi laboriosam, modi ipsum error provident, ipsam obcaecati corporis minima dolorem dolor blanditiis, architecto animi et magni vel.</p>
+                <h4>Charles Hu</h4>
+                <p>Methodical and clear explanations, lead by an enthusiastic and knowledgeable artist, it's great to have an opportunity to watch the process from start to finish. .</p>
               </div>
           </div>
           <div class="divVideo">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gJxa9yfbAzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <div class="textStudent">
-                <h4>Name Student</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos atque soluta sequi laboriosam, modi ipsum error provident, ipsam obcaecati corporis minima dolorem dolor blanditiis, architecto animi et magni vel.</p>
+            <iframe src="https://www.youtube.com/embed/gJxa9yfbAzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <div class="textStudent">
+                <h4>Amy Florence</h4>
+                <p>I think it is always very interesting to see the creative process of the artists you admire, and in this case it was really very very inspiring! I recommend it and I hope to see more courses!</p>
               </div>
           </div>
         </div>
@@ -114,29 +109,29 @@
           <div class="student">
               <img src="img/student1.jpg" alt="" class="imgStudent">
               <div class="textStudent">
-                <h4>Name Student</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos atque soluta sequi laboriosam, modi ipsum error provident, ipsam obcaecati corporis minima dolorem dolor blanditiis, architecto animi et magni vel.</p>
+                <h4>Joshua Jacobo</h4>
+                <p>“These courses have changed my art and my life. I can't wait for the new courses. Thank you so much!</p>
               </div>
           </div>
           <div class="student">
             <img src="img/student2.jpg" alt=""  class="imgStudent">
             <div class="textStudent">
-              <h4>Name Student</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequatur animi mollitia, reiciendis velit corrupti non earum enim exercitationem asperiores, molestias dignissimos. Soluta sapiente quam eum aperiam magni tempora blanditiis.</p>
-            </div>
+              <h4>Larissa Marantz</h4>
+              <p>“As a self- taught professional artist, my dream was to always go back to a really good art school. Thanks for making my dream possible.”</p>
+              </div>
           </div>
           <div class="student">
             <img src="img/student3.jpg" alt=""  class="imgStudent">
             <div class="textStudent">
-              <h4>Name Student</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eum quaerat maxime error. Architecto tempore doloremque saepe aut dicta, perferendis numquam facilis id iste repellendus sit voluptatum velit vitae quod.</p>
+              <h4>Gary Meyer</h4>
+              <p>“I’ve always wanted to go to art school. Now I have the best instructors I could ever hope for! Dream come true!”  </p>
             </div>
           </div>
           <div class="student">
             <img src="img/student4.jpg" alt=""  class="imgStudent">
             <div class="textStudent">
-              <h4>Name Student</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut quas inventore quia error debitis magni enim, ipsum atque ullam. Ut earum perferendis illum vero, id nemo sapiente quisquam fugit!</p>
+              <h4>Kamille Corry</h4>
+              <p>“Bravo! I just joined and I couldn't be happier! Been a student for a month now. So much to learn! I want to learn it all!”  </p>
             </div>
           </div>
       </div>
@@ -145,7 +140,7 @@
     
    <footer>
         <div class="footerText">
-            <p>Legal text</p>
+            <p>@Legal text</p>
         </div>
         <div class="footerLogos">
             <a href="https://twitter.com/" target="_blank" ><img src="img/gorjeo.png" alt="Twitter logo" class="logos"></a>

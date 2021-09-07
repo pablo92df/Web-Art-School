@@ -7,11 +7,9 @@
     <meta name="keywords" content="Drawing, Animatión, Illustration, Digital painting, Concept Art, Art, Art Courses">
     <meta name="description" content="Nuestros instructores cuentan con una gran experiencia profesional en las mas grandes empresas de entrenimiento">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  
     <link rel="stylesheet" href="CSS/styles.css">
 
 
@@ -19,73 +17,53 @@
 </head>
 <body>
    <header>
-    <a href="index.html" class="logo"><img src="img/logo.jpg" alt="name school logo" class="imgLogo" ></a>
-    <nav class="navBarra">
-        <ul class="ulNavBarra">
-             <li class="liNav"><a class="aLinkNavBar" href="index.html">HOME</a></li>
-             <li class="liNav"><a class="aLinkNavBar" href="courses.html">COURSES</a>
-                 <ul class="ulDesplegable">
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#DigitalPainting">DIGITAL PAINTING</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#CharacterDesing">CHARACTER DESING</a> </li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">PAINTING ENVIRONMENTS</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">CARTOONS</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">EDITORIAL ILLUSTRATION</a></li>
-                     <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">LIGHTING</a></li>
-                 </ul>
-             </li>
-             <li class="liNav"><a class="aLinkNavBar" href="instructors.html">INSTRUCTORS</a></li>
-             <li class="liNav"><a class="aLinkNavBar" href="works.html">WORKS</a> </li>
-             <li class="liNav"><a class="aLinkNavBar" href="contact.html">CONTACT</a></li>
-         </ul>
-         <div class="divNavResponsive">
-             <button class="btnMenu"><img class="imgMenu"src="img/menu.png" alt="" width="50px" height="25px"></button>
-         </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid container">
+          <a class="navbar-brand logo" href="index.html"><img src="img/logo.jpg" alt="name school logo" class="imgLogo" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navCollapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulNavBarra">
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="index.html">HOME</a></li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="courses.html">COURSES</a></li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="instructors.html">INSTRUCTORS</a></li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="works.html">WORKS</a> </li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
    </header>
     <main>
-        <img class="bannerInstructors"src="img/bannerInstructors.jpg" alt="">
+             <img class="bannerInstructors"src="img/bannerInstructors.jpg" alt="">
         <div class="boxMain">
             <div class="boxTitleInstructors">
                 <h1 class="titleInstructors">The Best Instructors</h1>
-                <h2 class="subTitlteInstructor">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                <h2 class="subTitlteInstructor">Our instructors are specialists and design professionals who are fully up-to-date on the needs of the Entertainment Industry.</h2>
             </div>
             <div class="instructorContainer wow animate__fadeInUp">
                 <img src="img/instructor1.jpg" alt="Instructor Digital Painting"  class="imgInstructor">
-                <h3 class="nameInstructors">Name Instructor</h3>
-                <p class="textInstructors">Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Iure, minima adipisci,
-                    pariatur quis repudiandae vitae animi voluptatum 
-                    consectetur illum sapiente veniam nulla? Aliquid magni hic qui quia optio excepturi! Vel!
-                </p> 
+                <h3 class="nameInstructors">Oscar Jasso</h3>
+                <p class="textInstructors">Art Focus: Drawing, Painting, Composition, Animation Taught at Walt Disney Studios, Marvel Productions, Warner Bros</p> 
                 <a class="portfolio" href="">See Portfolio</a>        
             </div>
             <div class="instructorContainer wow animate__fadeInUp">
                 <img src="img/instructor2.jpg" alt="Instructor character Desing"  class="imgInstructor">
-                <h3 class="nameInstructors">Name Instructor</h3>
-                <p class="textInstructors">Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Iure, minima adipisci,
-                    pariatur quis repudiandae vitae animi voluptatum 
-                    consectetur illum sapiente veniam nulla? Aliquid magni hic qui quia optio excepturi! Vel!
-                </p>     
+                <h3 class="nameInstructors">Ben Fenske</h3>
+                <p class="textInstructors">Art Focus: Figurative Painting, Character Design, Mural, Comic Books Teaches at Art Center College of Design, Laguna College of Art and Design, Gnomon Worked on “End of the Spear”</p>     
                 <a class="portfolio" href="">See Portfolio</a>        
             </div>
             <div class="instructorContainer wow animate__fadeInUp">
                 <img src="img/instructor3.jpg" alt="Instructor Painting Environments"  class="imgInstructor">
-                <h3 class="nameInstructors">Name Instructor</h3>
-                <p class="textInstructors">Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Iure, minima adipisci,
-                    pariatur quis repudiandae vitae animi voluptatum 
-                    consectetur illum sapiente veniam nulla? Aliquid magni hic qui quia optio excepturi! Vel!
-                </p>     
+                <h3 class="nameInstructors">Johanna Schwaiger</h3>
+                <p class="textInstructors">Teaches at Ringling College of Art and Design First Place Winner in the American Portrait Society’s International Portrait Competition</p>     
                 <a class="portfolio" href="">See Portfolio</a>        
             </div>
             <div class="instructorContainer wow animate__fadeInUp">
                 <img src="img/instructor4.jpg" alt="Instructor Cartoons" class="imgInstructor">
-                <h3 class="nameInstructors">Name Instructor</h3>
-                <p class="textInstructors">Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Iure, minima adipisci,
-                    pariatur quis repudiandae vitae animi voluptatum 
-                    consectetur illum sapiente veniam nulla? Aliquid magni hic qui quia optio excepturi! Vel!
+                <h3 class="nameInstructors">David Simon</h3>
+                <p class="textInstructors">Art Focus: Drawing, Painting Held numerous solo shows in New York, Boston, San Francisco, Miami Teaches at Lyme Art Association, Old Lyme, CT
                 </p>    
                 <a class="portfolio" href="">See Portfolio</a>        
             </div>

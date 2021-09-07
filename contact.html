@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  
     <link rel="stylesheet" href="CSS/styles.css">
 
 
@@ -19,34 +18,28 @@
 </head>
 <body>
    <header>
-    <a href="index.html" class="logo"><img src="img/logo.jpg" alt="name school logo" class="imgLogo" ></a>
-       <nav>
-        <nav class="navBarra">
-            <ul class="ulNavBarra">
-                 <li class="liNav"><a class="aLinkNavBar" href="index.html">HOME</a></li>
-                 <li class="liNav"><a class="aLinkNavBar" href="courses.html">COURSES</a>
-                     <ul class="ulDesplegable">
-                         <li class="liNav"><a class="aLinkNavBar" href="courses.html#DigitalPainting">DIGITAL PAINTING</a></li>
-                         <li class="liNav"><a class="aLinkNavBar" href="courses.html#CharacterDesing">CHARACTER DESING</a> </li>
-                         <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">PAINTING ENVIRONMENTS</a></li>
-                         <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">CARTOONS</a></li>
-                         <li class="liNav"><a class="aLinkNavBar" href="courses.html#PaintingEnvironments">EDITORIAL ILLUSTRATION</a></li>
-                         <li class="liNav"><a class="aLinkNavBar" href="courses.html#Cartoons">LIGHTING</a></li>
-                     </ul>
-                 </li>
-                 <li class="liNav"><a class="aLinkNavBar" href="instructors.html">INSTRUCTORS</a></li>
-                 <li class="liNav"><a class="aLinkNavBar" href="works.html">WORKS</a> </li>
-                 <li class="liNav"><a class="aLinkNavBar" href="contact.html">CONTACT</a></li>
-             </ul>
-             <div class="divNavResponsive">
-                 <button class="btnMenu"><img class="imgMenu"src="img/menu.png" alt="" width="50px" height="25px"></button>
-             </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid container">
+          <a class="navbar-brand logo" href="index.html"><img src="img/logo.jpg" alt="name school logo" class="imgLogo" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navCollapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulNavBarra">
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="index.html">HOME</a></li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="courses.html">COURSES</a></li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="instructors.html">INSTRUCTORS</a></li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="works.html">WORKS</a> </li>
+                <li class="liNav nav-item"><a class="aLinkNavBar nav-link" href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
    </header>
    <main>
         <div class="boxTxtForm">
             <h2 class="titleForm">Send you message</h2>
-            <p class="txtForm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel similique rerum beatae autem.</p>
+            <p class="txtForm">To contact our information and registration team, please use the form or the telephone numbers indicated below.</p>
         </div>
         <div class="containerForm">
             <div class="infoContact">
@@ -62,7 +55,7 @@
                     <img class="logosContact" src="img/mail.png" alt="">
                     <div class="textLogoContact">
                         <p class="textContactIconTitle">Email:</p>
-                        <p class="textContactIcon">escuelaarte@xxxxx.com</p>
+                        <p class="textContactIcon">newartschool@xxxxx.com</p>
                     </div>
                 </div>
                 <div class="subContact">
@@ -78,13 +71,13 @@
                     <h3>Ask Us</h3>
                     <div class="divInputs">
                         <input class="inputs" type="text" placeholder="Name">
-                        <input class="inputs" type="text" placeholder="Surname"> 
+                        <input class="inputs" type="text" placeholder="Last Name"> 
                     </div>
                     <div class="divInputs">                    
                         <input class="inputs" type="text" placeholder="Email">                   
                         <input class="inputs" type="text" placeholder="Phone">
                     </div>  
-                    <textarea class="textAreaContact"name="mensaje" id="" cols="30" rows="5" placeholder="Motivo de consulta"></textarea>
+                    <textarea class="textAreaContact"name="mensaje" id="" cols="30" rows="5" placeholder="Consult"></textarea>
                     <input class="inputBtn" type="submit" value="SUBMIT">
                 </form>
             </div>

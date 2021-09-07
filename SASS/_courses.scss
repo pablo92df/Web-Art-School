@@ -61,6 +61,7 @@
                 width: 100%;
                 font-weight: bold;
                 .buttonCourses{
+                    width: -moz-fit-content;
                     @extend %buttonCoursesGeneral;
                     margin-left: 20%;
                     padding: 10px;

@@ -20,26 +20,17 @@
         left: 30%;
         transform: translate(-50%,-50%);
     }
-    .btnBanner{
-        font-size: 2em;
-          position: absolute;
-          top: 40%;
-          left: 30%;
-          transform: translate(-50%,-50%);
-          background-color: #DAB400;
-          color: #f1faee;
-          border: none;
-      }
-}
-.tituloSubIndex{
-    color: #f1faee;
-    font-size: 3em;
-    text-decoration: underline;
-    text-decoration-color: #DAB400;
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    transform: translate(-50%,-50%);
+        
+    .tituloSubIndex{
+        color: #f1faee;
+        font-size: 3em;
+        text-decoration: underline;
+        text-decoration-color: #DAB400;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+    }
 }
 
 main{
@@ -161,6 +152,7 @@ main{
     align-items: center;
     justify-content: center;
     .btnCourses{
+        width: -moz-fit-content;
         @extend %buttonCoursesGeneral;
         font-size: 1.5rem;
         padding: 10px;

@@ -3,6 +3,13 @@
     text-align: center;
     @extend %titlePages;
  }
+ .textWorks{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+ }
  .containerBannerWorks{
     z-index: -1;
     margin-top: 20vh;
